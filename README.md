@@ -1,3 +1,11 @@
+<!-- 
+📝 CUSTOMIZATION GUIDE:
+1. Update social media links (lines 203-217): Replace with your actual LinkedIn, Twitter, Email, Portfolio URLs
+2. Customize Featured Projects (lines 108-153): Add links to your real repositories
+3. Adjust skills badges (lines 28-126): Keep only the technologies you actually use
+4. Optional: Set up GitHub Action for snake animation (see line 187 comment)
+-->
+
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A177E8&center=true&vCenter=true&width=940&lines=Hey+There!+I'm+Muhammad+Maheem+%F0%9F%91%8B;Full+Stack+Developer+%F0%9F%9A%80;Building+Amazing+Web+Applications+%E2%9C%A8;Always+Learning+New+Technologies+%F0%9F%93%9A" alt="Typing SVG" />
 </div>
