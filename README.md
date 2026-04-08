@@ -1,161 +1,161 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=300&section=header&text=Muhammad%20Maheem&fontSize=40&animation=twinkling&gradient=0:00d4ff,50:7c3aed,100:00d4ff&desc=AI%20Developer%20%7C%20ML%20Engineer%20%7C%20Full-Stack&descSize=18&descAlignY=65&descColor=ffffff&fontColor=ffffff" />
-</div>
+<pre align="center">
+ ███╗   ███╗██╗   ██║███████╗████████╗ ██████╗ ███╗   ██╗ ██████╗██╗  ██╗
+ ████╗ ████║██║   ██║██╔════╝╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝██║  ██║
+ ██╔████╔██║██║   ██║███████╗   ██║   ██║   ██║██╔██╗ ██║██║     ███████║
+ ██║╚██╔╝██║██║   ██║╚════██║   ██║   ██║   ██║██║╚██╗██║██║     ██╔══██║
+ ██║ ╚═╝ ██║╚██████╔╝███████║   ██║   ╚██████╔╝██║ ╚████║╚██████╗██║  ██║
+ ╚═╝     ╚═╝ ╚═════╝ ╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝
+</pre>
 
-```
-🔭 Building intelligent systems that solve real-world problems
-📍 Lahore, Pakistan | 🎓 BSc AI @ Superior University (CGPA: 3.58/4.0)
-💬 mirza.muhammad.maheem@gmail.com | 🌐 +92 300-8714141
-```
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=MuhammadMaheem&style=flat-square&color=0d1117&label=visitors&labelColor=f0883e" alt="visitors" />
+  <img src="https://img.shields.io/github/followers/MuhammadMaheem?style=flat-square&color=0d1117&labelColor=3fb950&label=followers" alt="followers" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMuhammadMaheem&query=%24.public_repos&style=flat-square&color=0d1117&labelColor=58a6ff&label=repos" alt="repos" />
+</p>
 
-<div align="center">
-  <a href="https://linkedin.com/in/muhammadmaheem" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/MuhammadMaheem" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
+<p align="center">
+  <em>AI Developer & Machine Learning Engineer · 21 · Lahore, Pakistan</em>
+</p>
+
+<p align="center">
   <a href="mailto:mirza.muhammad.maheem@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+    <img src="https://img.shields.io/badge/email-f85149?style=for-the-badge&labelColor=0d1117&logo=gmail&logoColor=f85149" alt="email" />
+  </a>
+  <a href="https://linkedin.com/in/muhammadmaheem" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-58a6ff?style=for-the-badge&labelColor=0d1117&logo=linkedin&logoColor=58a6ff" alt="linkedin" />
   </a>
   <a href="https://muhammadmaheem.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=about.me&logoColor=white" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/portfolio-3fb950?style=for-the-badge&labelColor=0d1117&logo=about.me&logoColor=3fb950" alt="portfolio" />
   </a>
-</div>
-
----
-
-## 🎯 What I Do
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🤖%20AI/ML-Deep%20Learning-7c3aed?style=flat-square" />
-  <img src="https://img.shields.io/badge/🧠%20NLP-RAG%20Systems-00d4ff?style=flat-square" />
-  <img src="https://img.shields.io/badge/👁️%20Computer%20Vision-OpenCV-ff6b6b?style=flat-square" />
-  <img src="https://img.shields.io/badge/🌐%20Full-Stack-Next.js-06b6d4?style=flat-square" />
-  <img src="https://img.shields.io/badge/🎮%20Reinforcement%20Learning-DQN-f59e0b?style=flat-square" />
-</p>
-
-I'm a **21-year-old AI Developer & Machine Learning Engineer** with a passion for building intelligent systems from the ground up. From **data preprocessing** and **model training** to **deploying production-ready applications** with robust authentication and responsive UIs — I cover the entire development lifecycle.
-
----
-
-## 💼 Professional Experience
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <img src="https://img.shields.io/badge/AI%20Full--Stack%20Developer%20Intern-PSDA-00d4ff?style=for-the-badge" />
-        <br/><br/>
-        <strong>Punjab Skill Development Authority</strong><br/>
-        <em>Mar 2026 – Present · Remote</em><br/><br/>
-        Building production SaaS from Figma designs<br/>
-        Next.js + Tailwind + PostgreSQL<br/>
-        Role-based auth & RESTful APIs
-      </td>
-      <td align="center" width="50%">
-        <img src="https://img.shields.io/badge/Frontend%20Developer-AABS-7c3aed?style=for-the-badge" />
-        <br/><br/>
-        <strong>Artificial Automation Business Solutions</strong><br/>
-        <em>Sep 2025 – Nov 2025 · Remote</em><br/><br/>
-        Next.js 15 + React 19 + TypeScript<br/>
-        NextAuth & subscription mgmt<br/>
-        Async cross-functional collaboration
-      </td>
-    </tr>
-  </table>
-</div>
-
----
-
-## 🛠️ Tech Stack
-
-<p align="center">
-  <strong>AI & Machine Learning</strong><br/><br/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logoColor=white" alt="LangChain" />
-  <img src="https://img.shields.io/badge/LangGraph-2C2C2C?style=for-the-badge&logoColor=white" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/ChromaDB-FF6B6B?style=for-the-badge&logoColor=white" alt="ChromaDB" />
-  <img src="https://img.shields.io/badge/FAISS-0078D4?style=for-the-badge&logoColor=white" alt="FAISS" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logoColor=white" alt="Scikit-learn" />
-</p>
-
-<p align="center">
-  <strong>Web Development</strong><br/><br/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
-</p>
-
-<p align="center">
-  <strong>Tools & Practices</strong><br/><br/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/OOP-5C3EE8?style=for-the-badge&logoColor=white" alt="OOP" />
-  <img src="https://img.shields.io/badge/DSA-00d4ff?style=for-the-badge&logoColor=white" alt="DSA" />
-  <img src="https://img.shields.io/badge/Claude%20Code-000000?style=for-the-badge&logoColor=white" alt="Claude Code" />
-  <img src="https://img.shields.io/badge/Copilot%20CLI-0078D4?style=for-the-badge&logoColor=white" alt="Copilot CLI" />
 </p>
 
 ---
 
-## 📊 GitHub Stats
+### `>` _Building intelligent systems from data to deployment_
 
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=MuhammadMaheem&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadMaheem&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-  <img src="https://github-profile-trophy.vercel.app/?username=MuhammadMaheem&theme=tokyonight&no-frame=true&margin-w=15&margin-h=15&no-bg=true&column=7" alt="Trophy" />
-  <br/><br/>
-  <img src="https://streak-stats.demolab.com/?user=MuhammadMaheem&theme=tokyonight&hide_border=true&date_format=%5BY.%5Dn.j" alt="Streak Stats" />
-</div>
+> 21-year-old AI Developer & ML Engineer focused on the full lifecycle — from preprocessing and model training to production apps with auth, APIs, and responsive UI. Specialized in **RAG systems**, **Computer Vision**, and **Reinforcement Learning**.
+>
+> _Superior University, Lahore — BSc AI (4th Sem, CGPA: 3.58/4.0)_
 
 ---
 
-## 🎓 Education
+## DISPATCHES — Professional Experience
 
-<div align="center">
-  <img src="https://img.shields.io/badge/🎓%20Superior%20University-Lahore-00d4ff?style=for-the-badge" />
-  <br/><br/>
-  <strong>BSc Artificial Intelligence</strong> | 2024–2028<br/>
-  <em>4th Semester · CGPA: 3.58/4.0</em><br/><br/>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Focus-ML-7c3aed?style=flat-square" />
-    <img src="https://img.shields.io/badge/Focus-Deep%20Learning-00d4ff?style=flat-square" />
-    <img src="https://img.shields.io/badge/Focus-NLP-ff6b6b?style=flat-square" />
-    <img src="https://img.shields.io/badge/Focus-Computer%20Vision-f59e0b?style=flat-square" />
-    <img src="https://img.shields.io/badge/Focus-DSA-06b6d4?style=flat-square" />
-  </p>
-</div>
+<table><tr><td valign="top" width="50%">
+
+#### `►` AI/Full-Stack Developer Intern — **PSDA**
+
+| | |
+|---|---|
+| **Period** | Mar 2026 – Present |
+| **Type** | Paid · Remote |
+| **Stack** | Next.js · Tailwind · PostgreSQL |
+
+Building a production SaaS application from Figma designs: website, admin dashboard, backend, and frontend. Developed role-based authentication, responsive UI, and RESTful API integrations.
+
+</td><td valign="top" width="50%">
+
+#### `►` Frontend Developer — **AABS**
+
+| | |
+|---|---|
+| **Period** | Sep 2025 – Nov 2025 |
+| **Type** | Part-time · Remote |
+| **Stack** | Next.js 15 · React 19 · TypeScript |
+
+Developed responsive UI for a full-stack SaaS Management Dashboard. Implemented secure auth flows with NextAuth, analytics visualizations, and subscription management interfaces.
+
+</td></tr></table>
 
 ---
 
-## 🔥 Currently
+## ARSENAL — Tech Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🚀%20Building-Production%20SaaS-00d4ff?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/📚%20Learning-Advanced%20RAG-7c3aed?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/🤝%20Open-Collaboration-ff6b6b?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" alt="Python" />
+  <img src="https://img.shields.io/badge/-PyTorch-0d1117?style=flat-square&logo=pytorch&logoColor=EE4C2C&labelColor=0d1117" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/-LangChain-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=1C3C3C" alt="LangChain" />
+  <img src="https://img.shields.io/badge/-LangGraph-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=2C2C2C" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/-ChromaDB-0d1117?style=flat-square&logoColor=FF6B6B&labelColor=0d1117&color=FF6B6B" alt="ChromaDB" />
+  <img src="https://img.shields.io/badge/-FAISS-0d1117?style=flat-square&logoColor=0078D4&labelColor=0d1117&color=0078D4" alt="FAISS" />
+  <img src="https://img.shields.io/badge/-OpenCV-0d1117?style=flat-square&logo=opencv&logoColor=5C3EE8&labelColor=0d1117" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/-Scikit--learn-0d1117?style=flat-square&logoColor=F7931E&labelColor=0d1117&color=F7931E" alt="Scikit-learn" />
+  <img src="https://img.shields.io/badge/-RL/DQN-0d1117?style=flat-square&logoColor=f0883e&labelColor=0d1117&color=f0883e" alt="RL" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/-Next.js-0d1117?style=flat-square&logo=next.js&logoColor=white&labelColor=0d1117" alt="Next.js" />
+  <img src="https://img.shields.io/badge/-React-0d1117?style=flat-square&logo=react&logoColor=61DAFB&labelColor=0d1117" alt="React" />
+  <img src="https://img.shields.io/badge/-TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6&labelColor=0d1117" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/-FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688&labelColor=0d1117" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/-Tailwind-0d1117?style=flat-square&logo=tailwind-css&logoColor=38B2AC&labelColor=0d1117" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/-JavaScript-0d1117?style=flat-square&logo=javascript&logoColor=F7DF1E&labelColor=0d1117" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/-PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1&labelColor=0d1117" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/-Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28&labelColor=0d1117" alt="Firebase" />
+  <img src="https://img.shields.io/badge/-Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B&labelColor=0d1117" alt="Streamlit" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/-Git-0d1117?style=flat-square&logo=git&logoColor=F05032&labelColor=0d1117" alt="Git" />
+  <img src="https://img.shields.io/badge/-Linux-0d1117?style=flat-square&logo=linux&logoColor=FCC624&labelColor=0d1117" alt="Linux" />
+  <img src="https://img.shields.io/badge/-OOP-0d1117?style=flat-square&logoColor=5C3EE8&labelColor=0d1117&color=5C3EE8" alt="OOP" />
+  <img src="https://img.shields.io/badge/-DSA-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="DSA" />
+  <img src="https://img.shields.io/badge/-Claude%20Code-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=0d1117" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/-Copilot%20CLI-0d1117?style=flat-square&logoColor=0078D4&labelColor=0d1117&color=0078D4" alt="Copilot CLI" />
 </p>
 
 ---
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=150&section=footer&text=Let's%20Connect%20%26%20Build%20Something%20Amazing!&fontSize=25&animation=twinkling&gradient=0:00d4ff,50:7c3aed,100:00d4ff&desc=Feel%20free%20to%20reach%20out%20for%20collaborations%20or%20just%20a%20chat!&descSize=14&descAlignY=65&descColor=ffffff&fontColor=ffffff" />
-</div>
+## TRANSMISSION LOGS — GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=MuhammadMaheem&show_icons=true&theme=dark&hide_border=true&count_private=true&bg_color=0d1117&title_color=f0883e&icon_color=3fb950&text_color=8b949e" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadMaheem&layout=compact&theme=dark&hide_border=true&langs_count=6&bg_color=0d1117&title_color=f0883e&text_color=8b949e" alt="langs" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=MuhammadMaheem&theme=darkhub&no-frame=true&margin-w=15&margin-h=15&no-bg=true&column=7" alt="trophy" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=MuhammadMaheem&theme=dark&hide_border=true&background=0d1117&ring=f0883e&fire=f85149&currStreakNum=3fb950&sideNum=58a6ff&sideLabel=8b949e&date_format=%5BY.%5Dn.j" alt="streak" />
+</p>
+
+---
+
+## DOSSIER — Education
+
+<pre>
+┌─────────────────────────────────────────────────────┐
+│  INSTITUTION : Superior University, Lahore          │
+│  DEGREE      : BSc Artificial Intelligence          │
+│  DURATION    : 2024 – 2028                          │
+│  STATUS      : 4th Semester                         │
+│  CGPA        : 3.58 / 4.0                           │
+│  FOCUS       : ML · DL · NLP · CV · DSA             │
+└─────────────────────────────────────────────────────┘
+</pre>
+
+---
+
+## STATUS TRANSMISSION
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🚀_Building-Production%20SaaS-f0883e?style=for-the-badge&labelColor=0d1117" alt="building" />
+  <img src="https://img.shields.io/badge/📚_Learning-Advanced%20RAG-58a6ff?style=for-the-badge&labelColor=0d1117" alt="learning" />
+  <img src="https://img.shields.io/badge/🤝_Open-Collaboration-3fb950?style=for-the-badge&labelColor=0d1117" alt="collaboration" />
+  <img src="https://img.shields.io/badge/⚡_Available-Freelance-f85149?style=for-the-badge&labelColor=0d1117" alt="available" />
+</p>
+
+---
+
+<pre align="center">
+┌─ Let's connect and build something amazing ──────────────────┐
+│  mirza.muhammad.maheem@gmail.com  ·  +92 300-8714141        │
+│  Lahore, Pakistan                                           │
+└─────────────────────────────────────────────────────────────┘
+</pre>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&height=80&section=footer&text=✦&fontSize=30&fontColor=f0883e&animation=twinkling&reversal=false&fontAlignY=50&desc=thanks%20for%20visiting&descSize=12&descColor=8b949e&descAlignY=75" alt="footer" />
+</p>
