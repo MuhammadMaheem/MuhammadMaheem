@@ -26,117 +26,179 @@
 </p>
 
 <p align="center">
+  <em>Lahore, Pakistan</em>
+</p>
+
+<p align="center">
   <img src="https://komarev.com/ghpvc/?username=MuhammadMaheem&style=flat-square&color=21262d&label=profile+views&labelColor=161b22" alt="views" />
   <img src="https://img.shields.io/github/followers/MuhammadMaheem?style=flat-square&color=21262d&labelColor=161b22" alt="followers" />
 </p>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" /> About Me
+## 🚀 About Me
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=MuhammadMaheem&show_icons=true&theme=dark&hide_border=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=3fb950&text_color=8b949e" width="48%" alt="stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadMaheem&layout=compact&theme=dark&hide_border=true&langs_count=6&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" width="48%" alt="langs" />
 </p>
 
-Focused on building **intelligent systems** that solve real-world problems. Experienced across the entire development lifecycle — from **data preprocessing** and **model training** to deploying **production-ready applications** with robust authentication and responsive UIs.
+**AI Engineer** specializing in **RAG systems**, **LLM evaluation pipelines**, and **full-stack SaaS** with production deployments using FastAPI, Next.js, ChromaDB, and Groq.
 
-Specialized in **RAG systems**, **Computer Vision** pipelines, and **Reinforcement Learning**.
+Experienced across the full pipeline from **embedding model selection** and **vector database indexing** to **CI/CD-integrated evaluation with RAGAS**. Currently building and shipping production systems as a **paid intern** while completing a BSc in Artificial Intelligence at Superior University.
+
+Focused on building intelligent systems that solve real-world problems — from **data preprocessing** and **model training** to deploying **production-ready applications** with robust authentication and responsive UIs.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Briefcase.png" alt="Briefcase" width="25" /> Experience
+## 🎓 Education
+
+**Superior University, Lahore**  
+_BSc Artificial Intelligence · 2024-2028_
+
+- Current Standing: 4th Semester
+- CGPA: 3.58/4.0
+
+---
+
+## 💼 Experience
 
 <table><tr><td width="50%" valign="top">
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" alt="Light Bulb" width="20" /> AI/Full-Stack Developer Intern
+### 💡 AI Developer Intern
 
 **Punjab Skill Development Authority (PSDA)**  
-*Mar 2026 – Present · Paid · Remote*
+_Mar 2026 – Present · Paid · Remote_
 
-- Building a production SaaS application from Figma designs
-- Website, admin dashboard, backend (PostgreSQL), frontend (Next.js + Tailwind CSS)
-- Role-based authentication, responsive UI, RESTful API integrations
-- Collaborating with cross-functional teams on tight deadlines
+- **Sole engineer** delivering a full-stack SaaS platform (Next.js + Tailwind + PostgreSQL) from Figma specs to production
+- Shipped public site, admin dashboard, and **3-role permission system** across 8+ REST API endpoints
+- Built **OCR document parser** using Gemini API to extract and structure text from multi-page uploaded documents
+- Integrated parser directly into SaaS backend pipeline for automated document processing
 
 </td><td width="50%" valign="top">
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Monitors.png" alt="Monitors" width="20" /> Frontend Developer
+### 🖥️ Software Engineer Intern
 
 **Artificial Automation Business Solutions (AABS)**  
-*Sep 2025 – Nov 2025 · Part-time · Remote*
+_Sep 2025 – Nov 2025 · Part-time · Remote_
 
-- Responsive UI components for full-stack SaaS Management Dashboard
-- Next.js 15, React 19, TypeScript
-- Secure auth flows with NextAuth, analytics visualizations
-- Subscription management interfaces, async collaboration with backend teams
+- **Built RAG-based PDF chatbot** with embedding model selection, ChromaDB vector indexing, and retrieval-augmented generation
+- Improved answer grounding over naive keyword search baseline with semantic retrieval
+- Developed responsive UI components for SaaS Management Dashboard (Next.js 15, React 19, TypeScript)
+- Implemented authentication, analytics visualizations, and subscription management interfaces
 
 </td></tr></table>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Gem%20Stone.png" alt="Gem" width="25" /> Featured Projects
+## 💎 Featured Projects
 
 <table><tr><td width="50%" valign="top">
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Robot.png" alt="Robot" width="20" /> RAG PDF Chatbot
+### 🤖 Quality Evaluation PDF Chatbot
 
-**Production-ready RAG system with quality evaluation**
+**Production-Ready RAG Pipeline with CI/CD Integration**
 
-- FastAPI + Next.js 14+ with Groq (Llama 3 70B)
-- Document pipeline: chunking → Sentence Transformers → ChromaDB
-- JWT authentication, isolated user workspaces
-- RAGAS metrics evaluation (Faithfulness, Context/Answer Relevance ≥0.80)
-- CLI workflow for batch/single-question evaluation with golden dataset
+- Engineered **automated LLM evaluation pipeline** with hard quality gate (RAGAS ≥ 0.80)
+- Designed for CI/CD integration — failing retrievals block deployment rather than reach users
+- Built CLI workflow for batch and single-question evaluation, golden dataset handling
+- JSON summary reporting for seamless CI/CD integration
+- Stack: FastAPI, ChromaDB, Groq/Llama 3, LangGraph, LangChain
 
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688&labelColor=0d1117" /> <img src="https://img.shields.io/badge/LangChain-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=1C3C3C" /> <img src="https://img.shields.io/badge/ChromaDB-0d1117?style=flat-square&logoColor=FF6B6B&labelColor=0d1117&color=FF6B6B" /> <img src="https://img.shields.io/badge/Groq-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=F5A623" />
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688&labelColor=0d1117" /> <img src="https://img.shields.io/badge/LangGraph-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=2C2C2C" /> <img src="https://img.shields.io/badge/RAGAS-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" /> <img src="https://img.shields.io/badge/Groq-0d1117?style=flat-square&logoColor=F5A623&labelColor=0d1117&color=F5A623" />
 
 </td><td width="50%" valign="top">
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Green%20Book.png" alt="Book" width="20" /> Hadith Chatbot
+### 🤖 RAG-Based PDF Chatbot
 
-**Semantic search over 39,038 authentic Hadiths**
+**Production-Ready Full-Stack RAG Application**
 
-- FAISS vector search with LangChain for semantic retrieval
-- Flask-based backend for complex religious text queries
-- Optimized for fast inference and precise cross-referencing
-- High accuracy across large-scale textual datasets
+- Developed with FastAPI, Next.js 14+, and Groq (Llama 3 70B)
+- Complete document pipeline: text chunking → Sentence Transformers → ChromaDB vector storage
+- JWT authentication with isolated user workspaces
+- Grounded answers via PDF retrieval for improved factuality
+- Full-stack deployment with secure backend and responsive UI
 
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/LangChain-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=1C3C3C" /> <img src="https://img.shields.io/badge/FAISS-0d1117?style=flat-square&logoColor=0078D4&labelColor=0d1117&color=0078D4" /> <img src="https://img.shields.io/badge/Flask-0d1117?style=flat-square&logo=flask&logoColor=white&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=next.js&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/ChromaDB-0d1117?style=flat-square&logoColor=FF6B6B&labelColor=0d1117&color=FF6B6B" /> <img src="https://img.shields.io/badge/Groq-0d1117?style=flat-square&logoColor=F5A623&labelColor=0d1117&color=F5A623" />
 
 </td></tr></table>
 
 <table><tr><td width="50%" valign="top">
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Joystick.png" alt="Joystick" width="20" /> Tic-Tac-Toe AI (DQN)
+### 📗 Hadith Chatbot
+
+**Semantic Search over 39,038 Authentic Hadiths**
+
+- Indexed 39,038 authentic Hadiths using FAISS vector search and LangChain
+- Implemented **two-stage retrieval pipeline**: BM25 keyword pre-filter → FAISS semantic re-ranking
+- Enabled precise **cross-hadith attribution** across chains of narration
+- Optimized for fast inference and accurate cross-referencing across large-scale textual datasets
+
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/LangChain-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=1C3C3C" /> <img src="https://img.shields.io/badge/FAISS-0d1117?style=flat-square&logoColor=0078D4&labelColor=0d1117&color=0078D4" /> <img src="https://img.shields.io/badge/BM25-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" />
+
+</td><td width="50%" valign="top">
+
+### 🎮 Tic-Tac-Toe AI (DQN)
 
 **Deep Q-Network trained via self-play**
 
-- PyTorch over 100,000 self-play episodes
-- Experience replay + epsilon-greedy exploration
-- Win/draw rate >98%
+- PyTorch trained over 100,000 self-play episodes
+- Experience replay + epsilon-greedy exploration for stable learning
+- Achieved **>98% win/draw rate** against optimal play
+- Benchmarked against minimax solver — demonstrates stable policy learning with no catastrophic forgetting
 - Model persistence + real-time CLI interaction
 
 <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/PyTorch-0d1117?style=flat-square&logo=pytorch&logoColor=EE4C2C&labelColor=0d1117" /> <img src="https://img.shields.io/badge/RL-0d1117?style=flat-square&logoColor=f0883e&labelColor=0d1117&color=f0883e" />
 
+</td></tr></table>
+
+<table><tr><td width="50%" valign="top">
+
+### 😎 Face Recognition Attendance
+
+**Anti-spoofing with Liveness Detection**
+
+- Dlib + OpenCV liveness detection for robust anti-spoofing
+- Streamlit GUI for real-time face recognition
+- Automated attendance logging with timestamps
+- Resistant to photo/video attacks with liveness verification
+
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/OpenCV-0d1117?style=flat-square&logo=opencv&logoColor=5C3EE8&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Dlib-0d1117?style=flat-square&logoColor=ea3223&labelColor=0d1117&color=ea3223" />
+
 </td><td width="50%" valign="top">
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Sunglasses.png" alt="Face" width="20" /> Face Recognition Attendance
+### 📝 Value Notes
 
-**Anti-spoofing with liveness detection**
+**Browser Extension for Collaborative Note-Taking**
 
-- Dlib + OpenCV liveness detection
-- Streamlit GUI for real-time recognition
-- Automated attendance logging with timestamps
-- Robust anti-spoofing against photo/video attacks
+- Chrome extension with real-time synchronization via Firebase
+- Built with React 18, TypeScript, and Tailwind CSS
+- Cross-device sync for seamless note management
+- Lightweight, fast, and privacy-focused design
 
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/OpenCV-0d1117?style=flat-square&logo=opencv&logoColor=5C3EE8&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/React%2018-0d1117?style=flat-square&logo=react&logoColor=61DAFB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwind-css&logoColor=38B2AC&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28&labelColor=0d1117" />
 
-</td></tr></table>
+</td></tr>
+
+<tr><td width="50%" valign="top">
+
+### 🏦 Bank Management System
+
+**Functional Banking Application with OOP**
+
+- Built with Python OOP principles for clean architecture
+- Streamlit GUI for interactive banking operations
+- Account management, transactions, and balance tracking
+- Educational implementation of banking system concepts
+
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/OOP-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" /> <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B&labelColor=0d1117" />
+
+</td></tr>
+</table>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Tools.png" alt="Tools" width="25" /> Tech Stack
+## 🛠️ Tech Stack
 
 <p align="center">
   <strong>AI & Machine Learning</strong>
@@ -152,6 +214,9 @@ Specialized in **RAG systems**, **Computer Vision** pipelines, and **Reinforceme
   <img src="https://img.shields.io/badge/ChromaDB-0d1117?style=flat-square&logoColor=FF6B6B&labelColor=0d1117&color=FF6B6B" alt="ChromaDB" />
   <img src="https://img.shields.io/badge/FAISS-0d1117?style=flat-square&logoColor=0078D4&labelColor=0d1117&color=0078D4" alt="FAISS" />
   <img src="https://img.shields.io/badge/RAG%20Systems-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="RAG" />
+  <img src="https://img.shields.io/badge/RAGAS-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="RAGAS" />
+  <img src="https://img.shields.io/badge/CI/CD%20Integration-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" alt="CI/CD" />
+  <img src="https://img.shields.io/badge/Multi--Agent%20Systems-0d1117?style=flat-square&logoColor=f0883e&labelColor=0d1117&color=f0883e" alt="Multi-agent" />
   <img src="https://img.shields.io/badge/RL/DQN-0d1117?style=flat-square&logoColor=f0883e&labelColor=0d1117&color=f0883e" alt="RL" />
   <img src="https://img.shields.io/badge/Prompt%20Engineering-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" alt="Prompt Eng" />
 </p>
@@ -168,6 +233,7 @@ Specialized in **RAG systems**, **Computer Vision** pipelines, and **Reinforceme
   <img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwind-css&logoColor=38B2AC&labelColor=0d1117" alt="Tailwind" />
   <img src="https://img.shields.io/badge/JavaScript-0d1117?style=flat-square&logo=javascript&logoColor=F7DF1E&labelColor=0d1117" alt="JavaScript" />
   <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1&labelColor=0d1117" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Groq-0d1117?style=flat-square&logoColor=F5A623&labelColor=0d1117&color=F5A623" alt="Groq" />
   <img src="https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28&labelColor=0d1117" alt="Firebase" />
   <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B&labelColor=0d1117" alt="Streamlit" />
   <img src="https://img.shields.io/badge/REST%20APIs-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="REST" />
@@ -188,7 +254,7 @@ Specialized in **RAG systems**, **Computer Vision** pipelines, and **Reinforceme
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Bar%20Chart.png" alt="Chart" width="25" /> GitHub Activity
+## 📊 GitHub Activity
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=MuhammadMaheem&theme=darkhub&no-frame=true&margin-w=15&margin-h=15&no-bg=true&column=6" alt="trophy" />
@@ -200,23 +266,7 @@ Specialized in **RAG systems**, **Computer Vision** pipelines, and **Reinforceme
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png" alt="Cap" width="25" /> Education
-
-### 🎓 BSc Artificial Intelligence — *Superior University*
-
-**2024 – 2028 · 4th Semester · CGPA: 3.58/4.0**
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Machine%20Learning-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="ML" />
-  <img src="https://img.shields.io/badge/Deep%20Learning-0d1117?style=flat-square&logoColor=f0883e&labelColor=0d1117&color=f0883e" alt="DL" />
-  <img src="https://img.shields.io/badge/NLP-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" alt="NLP" />
-  <img src="https://img.shields.io/badge/Computer%20Vision-0d1117?style=flat-square&logoColor=f85149&labelColor=0d1117&color=f85149" alt="CV" />
-  <img src="https://img.shields.io/badge/DSA-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="DSA" />
-</p>
-
----
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="25" /> Let's Connect
+## 🤝 Let's Connect
 
 <p align="center">
   <em>Open to collaborations, freelance projects, and interesting conversations in AI/ML</em>
