@@ -7,14 +7,14 @@
 </h1>
 
 <p align="center">
-  <em>AI Developer & Machine Learning Engineer — Building intelligent systems from data to deployment</em>
+  <em>AI Engineer | Machine Learning Engineer | Full-Stack AI Developer</em>
 </p>
 
 <p align="center">
   <a href="mailto:mirza.muhammad.maheem@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-0d1117?style=flat-square&logo=gmail&logoColor=EA4335&labelColor=0d1117" alt="Email" />
   </a>
-  <a href="https://linkedin.com/in/muhammadmaheem" target="_blank">
+  <a href="https://www.linkedin.com/in/muhammad-maheem/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=0A66C2&labelColor=0d1117" alt="LinkedIn" />
   </a>
   <a href="https://github.com/MuhammadMaheem" target="_blank">
@@ -43,9 +43,9 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadMaheem&layout=compact&theme=dark&hide_border=true&langs_count=6&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" width="48%" alt="langs" />
 </p>
 
-**AI Engineer** specializing in **RAG systems**, **LLM evaluation pipelines**, and **full-stack SaaS** with production deployments using FastAPI, Next.js, ChromaDB, and Groq.
+**AI Engineer** specializing in **RAG systems**, **LLM evaluation pipelines**, and **full-stack SaaS** with production deployments using FastAPI, Next.js, ChromaDB, and Groq. Built and shipped **16+ projects** across legal tech, HR tech, multi-agent research, and document intelligence.
 
-Experienced across the full pipeline from **embedding model selection** and **vector database indexing** to **CI/CD-integrated evaluation with RAGAS**. Currently building and shipping production systems as a **paid intern** while completing a BSc in Artificial Intelligence at Superior University.
+Experienced across the full pipeline from **embedding model selection** and **vector database indexing** to **CI/CD-integrated evaluation with RAGAS**. Currently building and shipping production systems while completing a BSc in Artificial Intelligence at Superior University.
 
 Focused on building intelligent systems that solve real-world problems — from **data preprocessing** and **model training** to deploying **production-ready applications** with robust authentication and responsive UIs.
 
@@ -56,8 +56,8 @@ Focused on building intelligent systems that solve real-world problems — from 
 **Superior University, Lahore**  
 _BSc Artificial Intelligence · 2024-2028_
 
-- Current Standing: 4th Semester
-- CGPA: 3.58/4.0
+- Current Standing: 5th Semester
+- CGPA: 3.56/4.0
 
 ---
 
@@ -65,17 +65,28 @@ _BSc Artificial Intelligence · 2024-2028_
 
 <table><tr><td width="50%" valign="top">
 
+### 💡 AI Engineer Intern
+
+**TEYZIX CORE**  
+_Jun 2026 – Jul 2026 · Remote_
+
+- Built **legal-tech contract risk analyzer**: 7-stage async pipeline (FastAPI + Next.js 15) extracting clauses, flagging risks with confidence scores, and computing an explainable compliance score via RAG over ChromaDB
+- Built **TEYZIX summarizer** combining extractive scoring (TF-IDF, positional) with abstractive BART, multi-document batching, and auto-detection across 16+ languages
+
+</td><td width="50%" valign="top">
+
 ### 💡 AI Developer Intern
 
 **Punjab Skill Development Authority (PSDA)**  
-_Mar 2026 – Present · Paid · Remote_
+_Mar 2026 – May 2026 · Paid · Remote_
 
 - **Sole engineer** delivering a full-stack SaaS platform (Next.js + Tailwind + PostgreSQL) from Figma specs to production
 - Shipped public site, admin dashboard, and **3-role permission system** across 8+ REST API endpoints
 - Built **OCR document parser** using Gemini API to extract and structure text from multi-page uploaded documents
 - Integrated parser directly into SaaS backend pipeline for automated document processing
 
-</td><td width="50%" valign="top">
+</td></tr>
+<tr><td colspan="2" valign="top">
 
 ### 🖥️ Software Engineer Intern
 
@@ -276,7 +287,7 @@ _Sep 2025 – Nov 2025 · Part-time · Remote_
   <a href="mailto:mirza.muhammad.maheem@gmail.com">
     <img src="https://img.shields.io/badge/📧_Email-f85149?style=for-the-badge&labelColor=0d1117" alt="Email" />
   </a>
-  <a href="https://linkedin.com/in/muhammadmaheem" target="_blank">
+  <a href="https://www.linkedin.com/in/muhammad-maheem/" target="_blank">
     <img src="https://img.shields.io/badge/💼_LinkedIn-58a6ff?style=for-the-badge&labelColor=0d1117" alt="LinkedIn" />
   </a>
   <a href="https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/" target="_blank">
