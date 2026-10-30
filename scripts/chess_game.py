@@ -27,7 +27,8 @@ import chess.svg
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / "chess" / "state.json"
-BOARD_SVG = ROOT / "assets" / "chess" / "board.svg"
+SQUARES = ROOT / "assets" / "chess" / "sq"
+TILE = 52
 README = ROOT / "README.md"
 REPO = os.environ.get("GITHUB_REPOSITORY", "MuhammadMaheem/MuhammadMaheem")
 START, END = "<!-- CHESS:START -->", "<!-- CHESS:END -->"
@@ -216,51 +217,89 @@ def issue_link(title: str) -> str:
     return f"https://github.com/{REPO}/issues/new?title={quote(title)}&body={quote(body)}"
 
 
-PIECE_ROWS = [(chess.PAWN, "♙ Pawn"), (chess.KNIGHT, "♘ Knight"), (chess.BISHOP, "♗ Bishop"),
-              (chess.ROOK, "♖ Rook"), (chess.QUEEN, "♕ Queen"), (chess.KING, "♔ King")]
+PIECE_NAMES = {chess.PAWN: "♙ Pawn", chess.KNIGHT: "♘ Knight", chess.BISHOP: "♗ Bishop",
+               chess.ROOK: "♖ Rook", chess.QUEEN: "♕ Queen", chess.KING: "♔ King"}
+
+
+def tile(board: chess.Board, sq: int, last: chess.Move | None, movable: bool) -> str:
+    """One board square as a standalone SVG, so every square can carry its own link."""
+    light = (chess.square_file(sq) + chess.square_rank(sq)) % 2 == 1
+    highlighted = last is not None and sq in (last.from_square, last.to_square)
+    fill = ("#c3d888" if light else "#92b166") if highlighted else ("#dee3e6" if light else "#8ca2ad")
+    ink = "#8ca2ad" if light else "#dee3e6"
+    parts = [f'<rect width="{TILE}" height="{TILE}" fill="{fill}"/>']
+    piece = board.piece_at(sq)
+    if piece and piece.piece_type == chess.KING and board.is_check() and piece.color == board.turn:
+        parts.append('<radialGradient id="c"><stop offset="0" stop-color="#ff0000"/>'
+                     '<stop offset="1" stop-color="#ff0000" stop-opacity="0"/></radialGradient>'
+                     f'<rect width="{TILE}" height="{TILE}" fill="url(#c)"/>')
+    if chess.square_file(sq) == 0:
+        parts.append(f'<text x="3" y="11" font-size="10" font-family="sans-serif" font-weight="700" fill="{ink}">'
+                     f'{chess.square_rank(sq) + 1}</text>')
+    if chess.square_rank(sq) == 0:
+        parts.append(f'<text x="{TILE - 3}" y="{TILE - 3}" text-anchor="end" font-size="10" font-family="sans-serif" '
+                     f'font-weight="700" fill="{ink}">{chess.FILE_NAMES[chess.square_file(sq)]}</text>')
+    if piece:
+        off = (TILE - 45) / 2
+        parts.append(chess.svg.piece(piece).replace("<svg ", f'<svg x="{off}" y="{off}" ', 1))
+    if movable:
+        parts.append(f'<circle cx="{TILE - 7}" cy="7" r="4" fill="#3fb950" stroke="#ffffff" stroke-width="1.2"/>')
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
+            f'viewBox="0 0 {TILE} {TILE}" width="{TILE}" height="{TILE}">{"".join(parts)}</svg>')
 
 
 def render(state: dict) -> None:
     board = board_of(state)
     last = board.peek() if board.move_stack else None
-    check = board.king(board.turn) if board.is_check() else None
-    svg = chess.svg.board(
-        board, size=420, lastmove=last, check=check, coordinates=True,
-        colors={"square light": "#dee3e6", "square dark": "#8ca2ad",
-                "square light lastmove": "#c3d888", "square dark lastmove": "#92b166",
-                "margin": "#0d1117", "coord": "#8b949e"},
-    )
-    BOARD_SVG.parent.mkdir(parents=True, exist_ok=True)
-    BOARD_SVG.write_text(svg)
-
+    over = outcome_text(board)
     ply = len(state["moves"])
+
+    moves_from: dict[int, list[chess.Move]] = {}
+    if not over:
+        for m in board.legal_moves:
+            if m.promotion and m.promotion != chess.QUEEN:
+                continue
+            moves_from.setdefault(m.from_square, []).append(m)
+
+    SQUARES.mkdir(parents=True, exist_ok=True)
+    rows = []
+    for rank in range(7, -1, -1):
+        cells = []
+        for file in range(8):
+            sq = chess.square(file, rank)
+            name = chess.square_name(sq)
+            (SQUARES / f"{name}.svg").write_text(tile(board, sq, last, sq in moves_from))
+            piece = board.piece_at(sq)
+            alt = f"{name} {chess.COLOR_NAMES[piece.color]} {chess.piece_name(piece.piece_type)}" if piece else name
+            href = f"#pick-{name}" if sq in moves_from else "#your-move"
+            cells.append(f'<a href="{href}"><img src="assets/chess/sq/{name}.svg?ply={ply}" '
+                         f'width="{TILE}" height="{TILE}" align="top" alt="{alt}"></a>')
+        rows.append("".join(cells) + "<br>")
+
     r = state["results"]
     lines = [START, '<div align="center">', "",
              f"**Game #{state['game']}** · move {board.fullmove_number} · "
              f"Humans **{r['humans']}** – **{r['engine']}** Engine · {r['draws']} draws", "",
-             f'<img src="assets/chess/board.svg?ply={ply}" width="420" alt="Current chess position">', "",
+             '<p align="center">', *rows, "</p>", "",
              "</div>", ""]
 
     if state["last"]:
         lines += [state["last"], ""]
 
-    over = outcome_text(board)
+    lines.append('<a name="your-move"></a>')
     if over:
-        lines += [over[1], "", f"**[♟️ Start a new game]({issue_link('chess|new')})**", ""]
+        lines += ["", over[1], "", f"**[♟️ Start a new game]({issue_link('chess|new')})**", ""]
     else:
-        lines += ["**Your move — you're White.** Click a move below, GitHub opens a pre-filled issue, "
-                  "press **Submit**. A depth-3 alpha-beta engine I wrote answers as Black within a minute.", "",
-                  "| Piece | Legal moves |", "| :-- | :-- |"]
-        by_piece: dict[int, list[str]] = {}
-        for m in sorted(board.legal_moves, key=lambda m: board.san(m)):
-            if m.promotion and m.promotion != chess.QUEEN:
-                continue
-            san = board.san(m)
-            by_piece.setdefault(board.piece_type_at(m.from_square), []).append(
-                f"[`{san}`]({issue_link(f'chess|move|{m.uci()}|{ply}')})")
-        for ptype, name in PIECE_ROWS:
-            if ptype in by_piece:
-                lines.append(f"| {name} | {' '.join(by_piece[ptype])} |")
+        lines += ["", "**How to play (you're White):** click one of your pieces with a green dot ▸ "
+                  "click where to move it ▸ GitHub opens a pre-filled issue, press **Submit**. "
+                  "My engine answers as Black within a minute.", "",
+                  "| Your piece | Click where to move it |", "| :-- | :-- |"]
+        order = sorted(moves_from, key=lambda sq: (board.piece_type_at(sq), chess.square_file(sq), sq))
+        for sq in order:
+            name = chess.square_name(sq)
+            targets = sorted(moves_from[sq], key=lambda m: board.san(m))
+            links = " ".join(f"[`{board.san(m)}`]({issue_link(f'chess|move|{m.uci()}|{ply}')})" for m in targets)
+            lines.append(f'| <a name="pick-{name}"></a>{PIECE_NAMES[board.piece_type_at(sq)]} on **{name}** | {links} |')
         lines.append("")
 
     recent = state["moves"][-10:]
