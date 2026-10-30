@@ -28,7 +28,8 @@ import chess.svg
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / "chess" / "state.json"
 SQUARES = ROOT / "assets" / "chess" / "sq"
-TILE = 52
+TILE = 52          # drawing size of one square tile
+TILE_SHOWN = 34    # display size: 8 x 34 = 272px still fits a 360px-wide phone
 README = ROOT / "README.md"
 REPO = os.environ.get("GITHUB_REPOSITORY", "MuhammadMaheem/MuhammadMaheem")
 START, END = "<!-- CHESS:START -->", "<!-- CHESS:END -->"
@@ -273,7 +274,7 @@ def render(state: dict) -> None:
             alt = f"{name} {chess.COLOR_NAMES[piece.color]} {chess.piece_name(piece.piece_type)}" if piece else name
             href = f"#pick-{name}" if sq in moves_from else "#your-move"
             cells.append(f'<a href="{href}"><img src="assets/chess/sq/{name}.svg?ply={ply}" '
-                         f'width="{TILE}" height="{TILE}" align="top" alt="{alt}"></a>')
+                         f'width="{TILE_SHOWN}" height="{TILE_SHOWN}" align="top" alt="{alt}"></a>')
         rows.append("".join(cells) + "<br>")
 
     r = state["results"]
