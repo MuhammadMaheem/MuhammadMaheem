@@ -1,0 +1,64 @@
+name: Chess
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: readme-writer
+  cancel-in-progress: false
+
+jobs:
+  play:
+    if: startsWith(github.event.issue.title, 'chess|')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install chess==1.11.2
+
+      - name: Play
+        id: play
+        env:
+          TITLE: ${{ github.event.issue.title }}
+          PLAYER: ${{ github.event.issue.user.login }}
+          REPLY_FILE: ${{ runner.temp }}/reply.md
+        run: |
+          IFS='|' read -r tag action move ply _ <<< "$TITLE"
+          set +e
+          case "$action" in
+            move) python scripts/chess_game.py move "$move" "$ply" "$PLAYER" ;;
+            new)  python scripts/chess_game.py new "$PLAYER" ;;
+            *)    echo "Unknown chess command." > "$REPLY_FILE"; false ;;
+          esac
+          code=$?
+          echo "changed=$([ $code -eq 0 ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit
+        if: steps.play.outputs.changed == 'true'
+        env:
+          PLAYER: ${{ github.event.issue.user.login }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md chess/state.json assets/chess/board.svg
+          git commit -m "chess: move by @$PLAYER"
+          git pull --rebase
+          git push
+
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/reply.md"
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY"

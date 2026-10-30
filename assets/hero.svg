@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" role="img" aria-label="Terminal: a multi-agent swarm researches and introduces Muhammad Maheem, AI Engineer">
+  <defs>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="0.5" stop-color="#bc8cff"/>
+      <stop offset="1" stop-color="#3fb950"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.6 0;0.6 0;-0.6 0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161b22"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <clipPath id="type">
+      <rect x="62" y="64" height="26" width="0">
+        <animate attributeName="width" from="0" to="335" begin="0.6s" dur="1.6s" fill="freeze" calcMode="discrete"
+          values="0;9.5;19;28.5;38;47.5;57;66.5;76;85.5;95;104.5;114;123.5;133;142.5;152;161.5;171;180.5;190;199.5;209;218.5;228;237.5;247;256.5;266;275.5;285;294.5;304;313.5;323;335"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .t  { font-size: 15px; fill: #e6edf3; }
+    .d  { fill: #8b949e; }
+    .b  { fill: #58a6ff; }
+    .g  { fill: #3fb950; }
+    .o  { fill: #f0883e; }
+    .p  { fill: #bc8cff; }
+    .y  { fill: #d29922; }
+    .l  { opacity: 0; animation: in .35s ease-out forwards; }
+    .ok { opacity: 0; animation: in .2s ease-out forwards; }
+    .bar { transform-box: fill-box; transform-origin: left; transform: scaleX(0); animation: grow .9s ease-out forwards; }
+    .cur { animation: blink 1s steps(1) infinite; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes grow { to { transform: scaleX(1); } }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <!-- window -->
+  <rect x="1" y="1" width="898" height="468" rx="12" fill="url(#glow)" stroke="#30363d" stroke-width="1.5"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="450" y="27" text-anchor="middle" class="mono d" font-size="13">maheem@lahore: ~/swarm — zsh</text>
+  <line x1="1" y1="42" x2="899" y2="42" stroke="#21262d"/>
+
+  <!-- prompt + typed command -->
+  <text x="28" y="82" class="mono t g">❯</text>
+  <text x="62" y="82" class="mono t" clip-path="url(#type)">swarm run <tspan class="y">"who is muhammad maheem?"</tspan></text>
+
+  <!-- agent log -->
+  <g class="mono t">
+    <text x="28" y="118" class="l" style="animation-delay:2.4s"><tspan class="p">[planner] </tspan><tspan x="128" class="d">decomposing query into a DAG → 3 parallel waves</tspan></text>
+
+    <text x="28" y="144" class="l" style="animation-delay:3.0s"><tspan class="b">[web]     </tspan><tspan x="128">▸ crawling github.com/MuhammadMaheem</tspan></text>
+    <rect x="480" y="134" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:3.0s"/>
+    <rect x="480" y="134" width="290" height="10" rx="2" fill="#58a6ff" class="bar" style="animation-delay:3.1s"/>
+    <text x="790" y="144" class="ok g" style="animation-delay:4.0s">✓ 90 repos</text>
+
+    <text x="28" y="170" class="l" style="animation-delay:3.3s"><tspan class="o">[rag]     </tspan><tspan x="128">▸ retrieving career chunks (hybrid)</tspan></text>
+    <rect x="480" y="160" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:3.3s"/>
+    <rect x="480" y="160" width="290" height="10" rx="2" fill="#f0883e" class="bar" style="animation-delay:3.4s"/>
+    <text x="790" y="170" class="ok g" style="animation-delay:4.3s">✓ 3 interns</text>
+
+    <text x="28" y="196" class="l" style="animation-delay:3.6s"><tspan class="g">[code]    </tspan><tspan x="128">▸ sandbox: python -m profile --verify</tspan></text>
+    <rect x="480" y="186" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:3.6s"/>
+    <rect x="480" y="186" width="290" height="10" rx="2" fill="#3fb950" class="bar" style="animation-delay:3.7s"/>
+    <text x="790" y="196" class="ok g" style="animation-delay:4.6s">✓ exit 0</text>
+
+    <text x="28" y="222" class="l" style="animation-delay:4.9s"><tspan class="p">[synth]   </tspan><tspan x="128" class="d">merging findings into a cited report…</tspan></text>
+    <text x="28" y="248" class="l" style="animation-delay:5.4s"><tspan class="y">[critic]  </tspan><tspan x="128" class="d">coverage </tspan><tspan class="g">0.97</tspan><tspan class="d"> ≥ 0.75 threshold → </tspan><tspan class="g">ACCEPT ✓</tspan></text>
+  </g>
+
+  <line x1="28" y1="270" x2="872" y2="270" stroke="#30363d" stroke-dasharray="4 6" class="l" style="animation-delay:5.9s"/>
+
+  <!-- the result -->
+  <g class="l" style="animation-delay:6.2s">
+    <text x="28" y="328" class="mono" font-size="46" font-weight="800" letter-spacing="3" fill="url(#name)">MUHAMMAD MAHEEM</text>
+  </g>
+  <g class="mono t">
+    <text x="28" y="364" class="l" style="animation-delay:6.8s"><tspan class="d">role</tspan><tspan x="108" font-weight="700">AI Engineer</tspan><tspan class="d"> · </tspan><tspan>RAG · multi-agent orchestration · LLM evals · full-stack SaaS</tspan></text>
+    <text x="28" y="390" class="l" style="animation-delay:7.2s"><tspan class="d">base</tspan><tspan x="108">Lahore, PK</tspan><tspan class="d"> · </tspan><tspan>BS Artificial Intelligence @ Superior University</tspan></text>
+    <text x="28" y="416" class="l" style="animation-delay:7.6s"><tspan class="d">status</tspan><tspan x="108" class="g">● open to onsite AI Engineer roles in Lahore</tspan></text>
+    <text x="28" y="450" class="l" style="animation-delay:8.1s"><tspan class="g">❯ </tspan><tspan class="d">scroll down to read the full report  </tspan><tspan class="cur b">█</tspan></text>
+  </g>
+</svg>

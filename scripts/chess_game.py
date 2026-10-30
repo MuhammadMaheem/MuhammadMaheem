@@ -1,0 +1,373 @@
+"""Community chess for the profile README: visitors play White, my engine plays Black.
+
+A visitor clicks a move link in the README, which opens a pre-filled issue titled
+    chess|move|<uci>|<ply>
+The `chess` workflow runs this script, which validates the move, lets the engine
+reply, then re-renders the board SVG and the README section.
+
+    python scripts/chess_game.py move e2e4 0 <github-login>
+    python scripts/chess_game.py new <github-login>
+    python scripts/chess_game.py render
+
+Exit codes: 0 = state changed (commit it), 2 = move rejected (just reply).
+The text to post back on the issue is written to $REPLY_FILE (or stdout).
+"""
+
+import json
+import os
+import random
+import re
+import sys
+import time
+from pathlib import Path
+from urllib.parse import quote
+
+import chess
+import chess.svg
+
+ROOT = Path(__file__).resolve().parent.parent
+STATE = ROOT / "chess" / "state.json"
+BOARD_SVG = ROOT / "assets" / "chess" / "board.svg"
+README = ROOT / "README.md"
+REPO = os.environ.get("GITHUB_REPOSITORY", "MuhammadMaheem/MuhammadMaheem")
+START, END = "<!-- CHESS:START -->", "<!-- CHESS:END -->"
+
+# ---------------------------------------------------------------- engine ----
+
+VALUES = {chess.PAWN: 100, chess.KNIGHT: 320, chess.BISHOP: 330,
+          chess.ROOK: 500, chess.QUEEN: 900, chess.KING: 0}
+
+# Piece-square tables from White's point of view, rank 8 first
+# (Tomasz Michniewski's "Simplified Evaluation Function").
+PST = {
+    chess.PAWN: [
+        0, 0, 0, 0, 0, 0, 0, 0,
+        50, 50, 50, 50, 50, 50, 50, 50,
+        10, 10, 20, 30, 30, 20, 10, 10,
+        5, 5, 10, 25, 25, 10, 5, 5,
+        0, 0, 0, 20, 20, 0, 0, 0,
+        5, -5, -10, 0, 0, -10, -5, 5,
+        5, 10, 10, -20, -20, 10, 10, 5,
+        0, 0, 0, 0, 0, 0, 0, 0],
+    chess.KNIGHT: [
+        -50, -40, -30, -30, -30, -30, -40, -50,
+        -40, -20, 0, 0, 0, 0, -20, -40,
+        -30, 0, 10, 15, 15, 10, 0, -30,
+        -30, 5, 15, 20, 20, 15, 5, -30,
+        -30, 0, 15, 20, 20, 15, 0, -30,
+        -30, 5, 10, 15, 15, 10, 5, -30,
+        -40, -20, 0, 5, 5, 0, -20, -40,
+        -50, -40, -30, -30, -30, -30, -40, -50],
+    chess.BISHOP: [
+        -20, -10, -10, -10, -10, -10, -10, -20,
+        -10, 0, 0, 0, 0, 0, 0, -10,
+        -10, 0, 5, 10, 10, 5, 0, -10,
+        -10, 5, 5, 10, 10, 5, 5, -10,
+        -10, 0, 10, 10, 10, 10, 0, -10,
+        -10, 10, 10, 10, 10, 10, 10, -10,
+        -10, 5, 0, 0, 0, 0, 5, -10,
+        -20, -10, -10, -10, -10, -10, -10, -20],
+    chess.ROOK: [
+        0, 0, 0, 0, 0, 0, 0, 0,
+        5, 10, 10, 10, 10, 10, 10, 5,
+        -5, 0, 0, 0, 0, 0, 0, -5,
+        -5, 0, 0, 0, 0, 0, 0, -5,
+        -5, 0, 0, 0, 0, 0, 0, -5,
+        -5, 0, 0, 0, 0, 0, 0, -5,
+        -5, 0, 0, 0, 0, 0, 0, -5,
+        0, 0, 0, 5, 5, 0, 0, 0],
+    chess.QUEEN: [
+        -20, -10, -10, -5, -5, -10, -10, -20,
+        -10, 0, 0, 0, 0, 0, 0, -10,
+        -10, 0, 5, 5, 5, 5, 0, -10,
+        -5, 0, 5, 5, 5, 5, 0, -5,
+        0, 0, 5, 5, 5, 5, 0, -5,
+        -10, 5, 5, 5, 5, 5, 0, -10,
+        -10, 0, 5, 0, 0, 0, 0, -10,
+        -20, -10, -10, -5, -5, -10, -10, -20],
+    chess.KING: [
+        -30, -40, -40, -50, -50, -40, -40, -30,
+        -30, -40, -40, -50, -50, -40, -40, -30,
+        -30, -40, -40, -50, -50, -40, -40, -30,
+        -30, -40, -40, -50, -50, -40, -40, -30,
+        -20, -30, -30, -40, -40, -30, -30, -20,
+        -10, -20, -20, -20, -20, -20, -20, -10,
+        20, 20, 0, 0, 0, 0, 20, 20,
+        20, 30, 10, 0, 0, 10, 30, 20],
+}
+
+MATE = 100_000
+
+
+def evaluate(board: chess.Board) -> int:
+    """Static score in centipawns from the side to move's point of view."""
+    score = 0
+    for sq, piece in board.piece_map().items():
+        idx = chess.square_mirror(sq) if piece.color == chess.WHITE else sq
+        v = VALUES[piece.piece_type] + PST[piece.piece_type][idx]
+        score += v if piece.color == chess.WHITE else -v
+    return score if board.turn == chess.WHITE else -score
+
+
+def ordered(board: chess.Board, captures_only: bool = False) -> list[chess.Move]:
+    def key(m: chess.Move) -> int:
+        k = 0
+        if board.is_capture(m):
+            victim = board.piece_type_at(m.to_square) or chess.PAWN  # en passant
+            k += 10 * VALUES[victim] - VALUES[board.piece_type_at(m.from_square)]
+        if m.promotion:
+            k += VALUES[m.promotion]
+        return -k
+    moves = board.generate_legal_captures() if captures_only else board.legal_moves
+    return sorted(moves, key=key)
+
+
+def quiesce(board: chess.Board, alpha: int, beta: int, depth: int = 4) -> int:
+    stand = evaluate(board)
+    if stand >= beta or depth == 0:
+        return stand
+    alpha = max(alpha, stand)
+    for m in ordered(board, captures_only=True):
+        board.push(m)
+        score = -quiesce(board, -beta, -alpha, depth - 1)
+        board.pop()
+        if score >= beta:
+            return score
+        alpha = max(alpha, score)
+    return alpha
+
+
+def negamax(board: chess.Board, depth: int, alpha: int, beta: int, ply: int) -> int:
+    if board.is_checkmate():
+        return -MATE + ply
+    if board.is_stalemate() or board.is_insufficient_material() or board.is_repetition(2):
+        return 0
+    if depth == 0:
+        return quiesce(board, alpha, beta)
+    best = -MATE
+    for m in ordered(board):
+        board.push(m)
+        score = -negamax(board, depth - 1, -beta, -alpha, ply + 1)
+        board.pop()
+        best = max(best, score)
+        alpha = max(alpha, score)
+        if alpha >= beta:
+            break
+    return best
+
+
+def engine_move(board: chess.Board, depth: int = 3, budget: float = 25.0) -> chess.Move:
+    """Iterative deepening; picks randomly among near-equal root moves for variety."""
+    deadline = time.monotonic() + budget
+    choice = next(iter(board.legal_moves))
+    for d in range(1, depth + 1):
+        scored = []
+        for m in ordered(board):
+            board.push(m)
+            scored.append((-negamax(board, d - 1, -MATE, MATE, 1), m))
+            board.pop()
+            if time.monotonic() > deadline:
+                break
+        else:
+            top = max(s for s, _ in scored)
+            choice = random.choice([m for s, m in scored if s >= top - 15])
+            continue
+        break  # ran out of time mid-depth: keep the last complete result
+    return choice
+
+# ----------------------------------------------------------------- state ----
+
+
+def load() -> dict:
+    if STATE.exists():
+        return json.loads(STATE.read_text())
+    return {"game": 1, "moves": [], "players": {}, "results": {"humans": 0, "engine": 0, "draws": 0},
+            "last": None, "finished": None}
+
+
+def save(state: dict) -> None:
+    STATE.parent.mkdir(parents=True, exist_ok=True)
+    STATE.write_text(json.dumps(state, indent=2) + "\n")
+
+
+def board_of(state: dict) -> chess.Board:
+    board = chess.Board()
+    for m in state["moves"]:
+        board.push_uci(m["uci"])
+    return board
+
+
+def outcome_text(board: chess.Board) -> tuple[str, str] | None:
+    """(bucket, sentence) if the game is over."""
+    o = board.outcome(claim_draw=True)
+    if o is None:
+        return None
+    if o.winner is chess.WHITE:
+        return "humans", "♔ **Checkmate — the humans win!** The engine has been defeated."
+    if o.winner is chess.BLACK:
+        return "engine", "♚ **Checkmate — the engine wins.** Better luck next game."
+    return "draws", f"🤝 **Draw** ({o.termination.name.replace('_', ' ').lower()})."
+
+# ---------------------------------------------------------------- render ----
+
+
+def issue_link(title: str) -> str:
+    body = "Just press **Submit new issue** — no need to write anything. The engine replies in about a minute."
+    return f"https://github.com/{REPO}/issues/new?title={quote(title)}&body={quote(body)}"
+
+
+PIECE_ROWS = [(chess.PAWN, "♙ Pawn"), (chess.KNIGHT, "♘ Knight"), (chess.BISHOP, "♗ Bishop"),
+              (chess.ROOK, "♖ Rook"), (chess.QUEEN, "♕ Queen"), (chess.KING, "♔ King")]
+
+
+def render(state: dict) -> None:
+    board = board_of(state)
+    last = board.peek() if board.move_stack else None
+    check = board.king(board.turn) if board.is_check() else None
+    svg = chess.svg.board(
+        board, size=420, lastmove=last, check=check, coordinates=True,
+        colors={"square light": "#dee3e6", "square dark": "#8ca2ad",
+                "square light lastmove": "#c3d888", "square dark lastmove": "#92b166",
+                "margin": "#0d1117", "coord": "#8b949e"},
+    )
+    BOARD_SVG.parent.mkdir(parents=True, exist_ok=True)
+    BOARD_SVG.write_text(svg)
+
+    ply = len(state["moves"])
+    r = state["results"]
+    lines = [START, '<div align="center">', "",
+             f"**Game #{state['game']}** · move {board.fullmove_number} · "
+             f"Humans **{r['humans']}** – **{r['engine']}** Engine · {r['draws']} draws", "",
+             f'<img src="assets/chess/board.svg?ply={ply}" width="420" alt="Current chess position">', "",
+             "</div>", ""]
+
+    if state["last"]:
+        lines += [state["last"], ""]
+
+    over = outcome_text(board)
+    if over:
+        lines += [over[1], "", f"**[♟️ Start a new game]({issue_link('chess|new')})**", ""]
+    else:
+        lines += ["**Your move — you're White.** Click a move below, GitHub opens a pre-filled issue, "
+                  "press **Submit**. A depth-3 alpha-beta engine I wrote answers as Black within a minute.", "",
+                  "| Piece | Legal moves |", "| :-- | :-- |"]
+        by_piece: dict[int, list[str]] = {}
+        for m in sorted(board.legal_moves, key=lambda m: board.san(m)):
+            if m.promotion and m.promotion != chess.QUEEN:
+                continue
+            san = board.san(m)
+            by_piece.setdefault(board.piece_type_at(m.from_square), []).append(
+                f"[`{san}`]({issue_link(f'chess|move|{m.uci()}|{ply}')})")
+        for ptype, name in PIECE_ROWS:
+            if ptype in by_piece:
+                lines.append(f"| {name} | {' '.join(by_piece[ptype])} |")
+        lines.append("")
+
+    recent = state["moves"][-10:]
+    if recent or state["players"]:
+        lines += ["<details><summary><b>Move log & top players</b></summary>", "", "| # | Move | By |", "| --: | :-- | :-- |"]
+        start = len(state["moves"]) - len(recent)
+        for i, m in enumerate(recent, start + 1):
+            who = "🤖 engine" if m["by"] == "engine" else f"[@{m['by']}](https://github.com/{m['by']})"
+            lines.append(f"| {i} | `{m['san']}` | {who} |")
+        top = sorted(state["players"].items(), key=lambda kv: -kv[1])[:5]
+        if top:
+            lines += ["", "**Top players:** " + " · ".join(
+                f"[@{u}](https://github.com/{u}) ({n})" for u, n in top)]
+        lines += ["", "</details>"]
+
+    lines.append(END)
+    text = README.read_text()
+    a, b = text.index(START), text.index(END) + len(END)
+    README.write_text(text[:a] + "\n".join(lines) + text[b:])
+
+# --------------------------------------------------------------- actions ----
+
+
+def reply(msg: str) -> None:
+    path = os.environ.get("REPLY_FILE")
+    if path:
+        Path(path).write_text(msg)
+    else:
+        print(msg)
+
+
+def finish_if_over(state: dict, board: chess.Board) -> str | None:
+    over = outcome_text(board)
+    if over and state["finished"] != state["game"]:
+        state["results"][over[0]] += 1
+        state["finished"] = state["game"]
+    return over[1] if over else None
+
+
+def cmd_move(uci: str, ply: str, user: str) -> int:
+    state = load()
+    board = board_of(state)
+    readme = f"https://github.com/{REPO}#-play-chess-against-my-engine"
+
+    if board.is_game_over(claim_draw=True):
+        reply(f"This game is already over — [start a new one]({readme}).")
+        return 2
+    if not re.fullmatch(r"[a-h][1-8][a-h][1-8][qrbn]?", uci) or not ply.isdigit():
+        reply("I couldn't read that move. Use the links in the README.")
+        return 2
+    if int(ply) != len(state["moves"]):
+        reply(f"Someone moved before you — the board has changed. [Pick a fresh move]({readme}).")
+        return 2
+    move = chess.Move.from_uci(uci)
+    if move not in board.legal_moves:
+        reply(f"`{uci}` isn't legal in this position. [Back to the board]({readme}).")
+        return 2
+
+    san = board.san(move)
+    board.push(move)
+    state["moves"].append({"uci": uci, "san": san, "by": user})
+    state["players"][user] = state["players"].get(user, 0) + 1
+    msg = f"@{user} played **{san}**."
+
+    if not board.is_game_over(claim_draw=True):
+        t = time.monotonic()
+        em = engine_move(board)
+        esan = board.san(em)
+        board.push(em)
+        state["moves"].append({"uci": em.uci(), "san": esan, "by": "engine"})
+        msg += f" The engine replied **{esan}** after {time.monotonic() - t:.1f}s of thought."
+
+    end = finish_if_over(state, board)
+    state["last"] = f"> {msg}" + (f"\n>\n> {end}" if end else "")
+    save(state)
+    render(state)
+    reply(f"{msg}\n\n{end or ''}\n\n[See the board →]({readme})".replace("\n\n\n\n", "\n\n"))
+    return 0
+
+
+def cmd_new(user: str) -> int:
+    state = load()
+    board = board_of(state)
+    readme = f"https://github.com/{REPO}#-play-chess-against-my-engine"
+    if state["moves"] and not board.is_game_over(claim_draw=True):
+        reply(f"A game is still in progress — [make a move]({readme}) instead!")
+        return 2
+    if state["moves"]:
+        state["game"] += 1
+    state.update(moves=[], last=f"> @{user} started a new game. White to move.", finished=None)
+    save(state)
+    render(state)
+    reply(f"New game started. [Make the first move →]({readme})")
+    return 0
+
+
+def main(argv: list[str]) -> int:
+    if argv[:1] == ["move"] and len(argv) == 4:
+        return cmd_move(argv[1].lower(), argv[2], argv[3])
+    if argv[:1] == ["new"] and len(argv) == 2:
+        return cmd_new(argv[1])
+    if argv[:1] == ["render"]:
+        render(load())
+        return 0
+    print(__doc__)
+    return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

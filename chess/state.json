@@ -1,0 +1,12 @@
+{
+  "game": 1,
+  "moves": [],
+  "players": {},
+  "results": {
+    "humans": 0,
+    "engine": 0,
+    "draws": 0
+  },
+  "last": null,
+  "finished": null
+}

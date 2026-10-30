@@ -1,300 +1,194 @@
-<h1 align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=28&center=true&vCenter=true&width=600&height=50&lines=Muhammad+Maheem;AI+%7C+ML+%7C+Full-Stack&color=58a6ff&background=0d111700" />
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=28&center=true&vCenter=true&width=600&height=50&lines=Muhammad+Maheem;AI+%7C+ML+%7C+Full-Stack&color=0969da&background=ffffff00" />
-    <img src="https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=28&center=true&vCenter=true&width=600&height=50&lines=Muhammad+Maheem;AI+%7C+ML+%7C+Full-Stack&color=58a6ff" alt="Muhammad Maheem" />
-  </picture>
-</h1>
+<div align="center">
 
-<p align="center">
-  <em>AI Engineer | Machine Learning Engineer | Full-Stack AI Developer</em>
-</p>
+<a href="https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/">
+  <img src="assets/hero.svg" width="100%" alt="A terminal where a multi-agent swarm researches and introduces Muhammad Maheem — AI Engineer, Lahore">
+</a>
 
-<p align="center">
-  <a href="mailto:mirza.muhammad.maheem@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-0d1117?style=flat-square&logo=gmail&logoColor=EA4335&labelColor=0d1117" alt="Email" />
-  </a>
-  <a href="https://www.linkedin.com/in/muhammad-maheem/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=0A66C2&labelColor=0d1117" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/MuhammadMaheem" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-0d1117?style=flat-square&logo=github&logoColor=white&labelColor=0d1117" alt="GitHub" />
-  </a>
-  <a href="https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-0d1117?style=flat-square&logo=about.me&logoColor=00C7B7&labelColor=0d1117" alt="Portfolio" />
-  </a>
-</p>
+<br>
 
-<p align="center">
-  <em>Lahore, Pakistan</em>
-</p>
+<a href="https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/"><img src="https://img.shields.io/badge/portfolio-0d1117?style=for-the-badge&logo=googlechrome&logoColor=3fb950" alt="Portfolio website"></a>
+<a href="https://www.linkedin.com/in/muhammad-maheem/"><img src="https://img.shields.io/badge/linkedin-0d1117?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzBBNjZDMiIgZD0iTTIwLjQ1IDIwLjQ1aC0zLjU2di01LjU3YzAtMS4zMy0uMDItMy4wNC0xLjg1LTMuMDQtMS44NSAwLTIuMTQgMS40NS0yLjE0IDIuOTR2NS42N0g5LjM1VjloMy40MXYxLjU2aC4wNWMuNDgtLjkgMS42NC0xLjg1IDMuMzctMS44NSAzLjYgMCA0LjI3IDIuMzcgNC4yNyA1LjQ2djYuMjh6TTUuMzQgNy40M2EyLjA2IDIuMDYgMCAxIDEgMC00LjEzIDIuMDYgMi4wNiAwIDAgMSAwIDQuMTN6TTcuMTIgMjAuNDVIMy41NlY5aDMuNTZ2MTEuNDV6TTIyLjIyIDBIMS43N0MuNzkgMCAwIC43NyAwIDEuNzN2MjAuNTRDMCAyMy4yMy43OSAyNCAxLjc3IDI0aDIwLjQ1Yy45OCAwIDEuNzgtLjc3IDEuNzgtMS43M1YxLjczQzI0IC43NyAyMy4yIDAgMjIuMjIgMHoiLz48L3N2Zz4=" alt="LinkedIn"></a>
+<a href="https://github.com/MuhammadMaheem"><img src="https://img.shields.io/badge/github-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/Muhammad-Maheem-Resume.pdf"><img src="https://img.shields.io/badge/résumé-0d1117?style=for-the-badge&logo=readdotcv&logoColor=f0883e" alt="Résumé (PDF)"></a>
+<a href="mailto:mirza.muhammad.maheem@gmail.com"><img src="https://img.shields.io/badge/email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"></a>
+<br>
+<img src="https://komarev.com/ghpvc/?username=MuhammadMaheem&style=flat-square&color=21262d&label=profile+visitors" alt="Profile visitors">
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=MuhammadMaheem&style=flat-square&color=21262d&label=profile+views&labelColor=161b22" alt="views" />
-  <img src="https://img.shields.io/github/followers/MuhammadMaheem?style=flat-square&color=21262d&labelColor=161b22" alt="followers" />
-</p>
+</div>
+
+<br>
+
+> [!TIP]
+> **This README is a working system, not a page.** Two GitHub Actions keep it alive: one redraws my commit history as a heartbeat every night, the other runs a chess engine I wrote that plays anyone who scrolls to the bottom. [Skip to the game ↓](#-play-chess-against-my-engine)
+
+## 🧭 Choose your route
+
+<details>
+<summary><b>👔 &nbsp;I'm hiring — give me the 30-second version</b></summary>
+<br>
+
+| 🎯 | |
+| :-- | :-- |
+| **Looking for** | Onsite **AI Engineer** roles in **Lahore** |
+| **Strongest at** | RAG pipelines · multi-agent orchestration with LangGraph · LLM evaluation (RAGAS quality gates in CI) |
+| **Experience** | 3 internships: legal-tech & HR-tech AI at **TEYZIX CORE**, sole engineer on a government SaaS at **PSDA**, RAG + SaaS UI at **AABS** |
+| **Shipped** | 16+ projects, including live deployments on Vercel + Railway |
+| **Daily stack** | Python · FastAPI · LangGraph · TypeScript · Next.js · PostgreSQL · Docker |
+| **Education** | BS Artificial Intelligence, Superior University (2024 – 2028) · CGPA 3.56 |
+| **Reach me** | [mirza.muhammad.maheem@gmail.com](mailto:mirza.muhammad.maheem@gmail.com) · [LinkedIn](https://www.linkedin.com/in/muhammad-maheem/) · [Portfolio](https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/) · [Résumé (PDF)](https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/Muhammad-Maheem-Resume.pdf) |
+
+</details>
+
+<details>
+<summary><b>🛠️ &nbsp;I'm an engineer — show me how you build</b></summary>
+<br>
+
+- **Architecture:** my flagship [multi-agent research swarm](#-flagship--autonomous-research-agent-swarm) (planner → parallel specialists → critic loop).
+- **This repo is code, too:**
+  - [`scripts/chess_game.py`](scripts/chess_game.py): negamax + alpha-beta, quiescence search, piece-square tables, all driven by GitHub Issues.
+  - [`scripts/heartbeat.py`](scripts/heartbeat.py): GitHub GraphQL → hand-built ECG path → animated SVG, no chart library.
+  - [`.github/workflows/`](.github/workflows): the two Actions that run both on their own.
+- **Everything else** is in the [agent registry](#-agent-registry) below.
+
+</details>
+
+## 🫀 Pulse
+
+<div align="center">
+  <img src="assets/heartbeat.svg" width="100%" alt="ECG-style trace of my GitHub contributions over the past year, one heartbeat per week">
+  <br>
+  <sub>Every spike is one week of commits. Taller spike, busier week. Redrawn every night by <a href=".github/workflows/heartbeat.yml">a GitHub Action</a>.</sub>
+</div>
+
+## 🐝 Flagship · Autonomous Research Agent Swarm
+
+Ask a research question. A **planner** breaks it into a DAG and sends **specialist agents** out in parallel waves. A **synthesizer** writes a cited report. A **critic** checks claim coverage and sends the work back if it isn't good enough.
+
+```mermaid
+flowchart TD
+    Q([❓ research question]) --> P[🧠 Planner<br/><sub>Groq LLM → task DAG</sub>]
+    P --> S{{⚡ Scheduler<br/><sub>parallel waves via Send</sub>}}
+    S --> W[🌐 Web specialist]
+    S --> C[🧪 Code specialist<br/><sub>sandboxed</sub>]
+    S --> R[📚 RAG specialist<br/><sub>BM25</sub>]
+    W & C & R --> Y[✍️ Synthesizer<br/><sub>cited report</sub>]
+    Y --> K[🔎 Citation checker<br/><sub>sentence-level audit</sub>]
+    K --> X{🎯 Critic}
+    X -- "coverage < 0.75<br/>(max 2 loops)" --> P
+    X -- "coverage ≥ 0.75" --> F([📄 verified report])
+
+    classDef agent fill:#161b22,stroke:#58a6ff,color:#e6edf3
+    classDef gate fill:#161b22,stroke:#f0883e,color:#e6edf3
+    classDef io fill:#0d1117,stroke:#3fb950,color:#e6edf3
+    class P,W,C,R,Y,K agent
+    class S,X gate
+    class Q,F io
+```
+
+**LangGraph** state machine with persistence and loops · **FastAPI** streaming every step over SSE · **Next.js + React Flow** showing the live DAG · **SQLite** event store for traces · an **eval harness** comparing the full swarm against a no-critic ablation and a single-agent baseline.
+
+[![Repo](https://img.shields.io/badge/source-Autonomous--Research--Agent--Swarm-0d1117?style=flat-square&logo=github)](https://github.com/MuhammadMaheem/Autonomous-Research-Agent-Swarm)
+
+## 📜 `git log --graph --career`
+
+```text
+* Jun 2026 — Jul 2026  (HEAD -> ai-engineer)  AI Engineer Intern @ TEYZIX CORE
+|   + legal-tech contract risk analyzer: 7-stage async pipeline (FastAPI + Next.js 15),
+|     clause extraction, risk flags with confidence scores, explainable compliance score
+|     via RAG over ChromaDB
+|   + RecruitAI: resume screening & candidate ranking with Groq + ChromaDB, live on Vercel + Railway
+|   + hybrid summarizer: TF-IDF/positional extractive + BART abstractive, 16+ languages
+|
+* Mar 2026 — May 2026  (tag: sole-engineer)  AI Developer Intern @ Punjab Skill Development Authority (PSDA)
+|   + delivered a full-stack SaaS alone, from Figma specs to production (Next.js, Tailwind, PostgreSQL)
+|   + public site, admin dashboard, 3-role permission system across 8+ REST endpoints
+|   + Gemini-powered OCR parser wired into the backend for multi-page document processing
+|
+* Sep 2025 — Nov 2025  (tag: first-rag)  Software Engineer Intern @ Artificial Automation Business Solutions (AABS)
+|   + RAG PDF chatbot: embedding model selection, ChromaDB indexing, grounded answers
+|   + SaaS dashboard UI in Next.js 15 / React 19: auth, analytics, subscriptions
+|
+* 2024 — 2028         (root)  git init — BS Artificial Intelligence @ Superior University, Lahore (5th semester)
+```
+
+## 🧩 Agent registry
+
+Every project is listed as an agent: what it does, what runs it, and where to find it.
+
+| Agent | Mission | Runtime | |
+| :-- | :-- | :-- | :-: |
+| 🐝 **research-swarm** | Multi-agent research with a critic loop and verified citations | LangGraph · FastAPI · Next.js | [↗](https://github.com/MuhammadMaheem/Autonomous-Research-Agent-Swarm) |
+| ⚖️ **contract-auditor** | Reads contracts (scanned PDFs too), flags risky clauses with confidence scores, exports PDF/DOCX reports | FastAPI · Next.js · ChromaDB · OCR | [↗](https://github.com/MuhammadMaheem/Contact-Risk-Analyzer) |
+| 🧑‍💼 **recruit-ai** | Screens résumés and ranks candidates against a job description with a 100-point score | Groq · ChromaDB · Next.js | [↗](https://github.com/MuhammadMaheem/RecruitAI) · [live](https://recruit-ai-mu.vercel.app) |
+| 🧪 **docuquery** | RAG chatbot that blocks deploys when the RAGAS score drops below 0.80 | FastAPI · LangGraph · RAGAS · Groq | [↗](https://github.com/MuhammadMaheem/Quality-Evaluation-RAG-chatbot) |
+| 🤖 **agentic-rag** | Agentic RAG over PDFs with multi-query expansion, streaming answers and JWT auth | FastAPI · Next.js · PostgreSQL | [↗](https://github.com/MuhammadMaheem/PDF-Chatbot-Rag) |
+| 📗 **hadith-scholar** | Semantic search over 39,038 hadiths: BM25 pre-filter → FAISS re-rank | LangChain · FAISS | [↗](https://github.com/MuhammadMaheem/Hadith-Chatbot) |
+| 📝 **summarizer** | Hybrid extractive + abstractive (BART) summaries, multi-document, 16+ languages | Flask · Transformers | [↗](https://github.com/MuhammadMaheem/AI-Powered-Document-Summarization-System) |
+| 🎮 **dqn-player** | Deep Q-Network trained over 100k self-play games, >98% win/draw vs optimal play | PyTorch · RL | [↗](https://github.com/MuhammadMaheem/tic-tac-toe-Deep-Q-learning) |
+| 🙂 **face-attendance** | Face-recognition attendance with liveness detection against photo/video spoofing | OpenCV · Dlib · Streamlit | 🔒 |
+
+## ⚙️ Runtime
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,sklearn,opencv,fastapi,postgres,docker,linux&theme=dark" alt="Python, PyTorch, scikit-learn, OpenCV, FastAPI, PostgreSQL, Docker, Linux">
+<br>
+<img src="https://skillicons.dev/icons?i=ts,nextjs,react,tailwind,firebase,vercel,git,github&theme=dark" alt="TypeScript, Next.js, React, Tailwind, Firebase, Vercel, Git, GitHub">
+
+</div>
+
+```yaml
+# ~/.maheem/runtime.yaml
+llm:        [Groq / Llama 3, Gemini, Claude]
+agents:     [LangGraph, LangChain, MCP servers]
+retrieval:  [ChromaDB, FAISS, BM25 hybrid, re-ranking]
+evals:      [RAGAS quality gates in CI, golden datasets, ablation studies]
+ml:         [PyTorch, scikit-learn, OpenCV, Dlib, DQN]
+ship:       [FastAPI, Next.js 15, PostgreSQL, Docker, Vercel, Railway, Neon]
+tooling:    [uv, Git, Linux, Claude Code]
+```
+
+## ♟️ Play chess against my engine
+
+<!-- CHESS:START -->
+<div align="center">
+
+**Game #1** · move 1 · Humans **0** – **0** Engine · 0 draws
+
+<img src="assets/chess/board.svg?ply=0" width="420" alt="Current chess position">
+
+</div>
+
+**Your move — you're White.** Click a move below, GitHub opens a pre-filled issue, press **Submit**. A depth-3 alpha-beta engine I wrote answers as Black within a minute.
+
+| Piece | Legal moves |
+| :-- | :-- |
+| ♙ Pawn | [`a3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Ca2a3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`a4`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Ca2a4%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`b3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cb2b3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`b4`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cb2b4%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`c3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cc2c3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`c4`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cc2c4%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`d3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cd2d3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`d4`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cd2d4%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`e3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Ce2e3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`e4`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Ce2e4%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`f3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cf2f3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`f4`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cf2f4%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`g3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cg2g3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`g4`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cg2g4%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`h3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Ch2h3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`h4`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Ch2h4%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) |
+| ♘ Knight | [`Na3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cb1a3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`Nc3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cb1c3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`Nf3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cg1f3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) [`Nh3`](https://github.com/MuhammadMaheem/MuhammadMaheem/issues/new?title=chess%7Cmove%7Cg1h3%7C0&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20no%20need%20to%20write%20anything.%20The%20engine%20replies%20in%20about%20a%20minute.) |
+
+<!-- CHESS:END -->
+
+## 📡 Get in touch
+
+<div align="center">
+
+Hiring for an AI Engineer role in Lahore, or want to build something together? I reply fast.
+
+<a href="https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/"><img src="https://img.shields.io/badge/🌐_portfolio_website-3fb950?style=for-the-badge&labelColor=0d1117" alt="Portfolio website"></a>
+<a href="https://www.linkedin.com/in/muhammad-maheem/"><img src="https://img.shields.io/badge/💼_linkedin-0A66C2?style=for-the-badge&labelColor=0d1117" alt="LinkedIn"></a>
+<a href="https://github.com/MuhammadMaheem?tab=repositories"><img src="https://img.shields.io/badge/🗂️_all_repositories-6e7681?style=for-the-badge&labelColor=0d1117" alt="All GitHub repositories"></a>
+<a href="https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/Muhammad-Maheem-Resume.pdf"><img src="https://img.shields.io/badge/📄_résumé-f0883e?style=for-the-badge&labelColor=0d1117" alt="Résumé (PDF)"></a>
+<a href="mailto:mirza.muhammad.maheem@gmail.com"><img src="https://img.shields.io/badge/📧_email_me-EA4335?style=for-the-badge&labelColor=0d1117" alt="Email"></a>
+
+</div>
 
 ---
 
-## 🚀 About Me
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MuhammadMaheem&show_icons=true&theme=dark&hide_border=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=3fb950&text_color=8b949e" width="48%" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadMaheem&layout=compact&theme=dark&hide_border=true&langs_count=6&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" width="48%" alt="langs" />
-</p>
+```text
+❯ swarm status
+  all agents idle · critic satisfied · recruiter inbox: open  →  mirza.muhammad.maheem@gmail.com
+```
 
-**AI Engineer** specializing in **RAG systems**, **LLM evaluation pipelines**, and **full-stack SaaS** with production deployments using FastAPI, Next.js, ChromaDB, and Groq. Built and shipped **16+ projects** across legal tech, HR tech, multi-agent research, and document intelligence.
-
-Experienced across the full pipeline from **embedding model selection** and **vector database indexing** to **CI/CD-integrated evaluation with RAGAS**. Currently building and shipping production systems while completing a BSc in Artificial Intelligence at Superior University.
-
-Focused on building intelligent systems that solve real-world problems — from **data preprocessing** and **model training** to deploying **production-ready applications** with robust authentication and responsive UIs.
-
----
-
-## 🎓 Education
-
-**Superior University, Lahore**  
-_BSc Artificial Intelligence · 2024-2028_
-
-- Current Standing: 5th Semester
-- CGPA: 3.56/4.0
-
----
-
-## 💼 Experience
-
-<table><tr><td width="50%" valign="top">
-
-### 💡 AI Engineer Intern
-
-**TEYZIX CORE**  
-_Jun 2026 – Jul 2026 · Remote_
-
-- Built **legal-tech contract risk analyzer**: 7-stage async pipeline (FastAPI + Next.js 15) extracting clauses, flagging risks with confidence scores, and computing an explainable compliance score via RAG over ChromaDB
-- Built **TEYZIX summarizer** combining extractive scoring (TF-IDF, positional) with abstractive BART, multi-document batching, and auto-detection across 16+ languages
-
-</td><td width="50%" valign="top">
-
-### 💡 AI Developer Intern
-
-**Punjab Skill Development Authority (PSDA)**  
-_Mar 2026 – May 2026 · Paid · Remote_
-
-- **Sole engineer** delivering a full-stack SaaS platform (Next.js + Tailwind + PostgreSQL) from Figma specs to production
-- Shipped public site, admin dashboard, and **3-role permission system** across 8+ REST API endpoints
-- Built **OCR document parser** using Gemini API to extract and structure text from multi-page uploaded documents
-- Integrated parser directly into SaaS backend pipeline for automated document processing
-
-</td></tr>
-<tr><td colspan="2" valign="top">
-
-### 🖥️ Software Engineer Intern
-
-**Artificial Automation Business Solutions (AABS)**  
-_Sep 2025 – Nov 2025 · Part-time · Remote_
-
-- **Built RAG-based PDF chatbot** with embedding model selection, ChromaDB vector indexing, and retrieval-augmented generation
-- Improved answer grounding over naive keyword search baseline with semantic retrieval
-- Developed responsive UI components for SaaS Management Dashboard (Next.js 15, React 19, TypeScript)
-- Implemented authentication, analytics visualizations, and subscription management interfaces
-
-</td></tr></table>
-
----
-
-## 💎 Featured Projects
-
-<table><tr><td width="50%" valign="top">
-
-### 🤖 Quality Evaluation PDF Chatbot
-
-**Production-Ready RAG Pipeline with CI/CD Integration**
-
-- Engineered **automated LLM evaluation pipeline** with hard quality gate (RAGAS ≥ 0.80)
-- Designed for CI/CD integration — failing retrievals block deployment rather than reach users
-- Built CLI workflow for batch and single-question evaluation, golden dataset handling
-- JSON summary reporting for seamless CI/CD integration
-- Stack: FastAPI, ChromaDB, Groq/Llama 3, LangGraph, LangChain
-
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688&labelColor=0d1117" /> <img src="https://img.shields.io/badge/LangGraph-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=2C2C2C" /> <img src="https://img.shields.io/badge/RAGAS-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" /> <img src="https://img.shields.io/badge/Groq-0d1117?style=flat-square&logoColor=F5A623&labelColor=0d1117&color=F5A623" />
-
-</td><td width="50%" valign="top">
-
-### 🤖 RAG-Based PDF Chatbot
-
-**Production-Ready Full-Stack RAG Application**
-
-- Developed with FastAPI, Next.js 14+, and Groq (Llama 3 70B)
-- Complete document pipeline: text chunking → Sentence Transformers → ChromaDB vector storage
-- JWT authentication with isolated user workspaces
-- Grounded answers via PDF retrieval for improved factuality
-- Full-stack deployment with secure backend and responsive UI
-
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=next.js&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/ChromaDB-0d1117?style=flat-square&logoColor=FF6B6B&labelColor=0d1117&color=FF6B6B" /> <img src="https://img.shields.io/badge/Groq-0d1117?style=flat-square&logoColor=F5A623&labelColor=0d1117&color=F5A623" />
-
-</td></tr></table>
-
-<table><tr><td width="50%" valign="top">
-
-### 📗 Hadith Chatbot
-
-**Semantic Search over 39,038 Authentic Hadiths**
-
-- Indexed 39,038 authentic Hadiths using FAISS vector search and LangChain
-- Implemented **two-stage retrieval pipeline**: BM25 keyword pre-filter → FAISS semantic re-ranking
-- Enabled precise **cross-hadith attribution** across chains of narration
-- Optimized for fast inference and accurate cross-referencing across large-scale textual datasets
-
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/LangChain-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=1C3C3C" /> <img src="https://img.shields.io/badge/FAISS-0d1117?style=flat-square&logoColor=0078D4&labelColor=0d1117&color=0078D4" /> <img src="https://img.shields.io/badge/BM25-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" />
-
-</td><td width="50%" valign="top">
-
-### 🎮 Tic-Tac-Toe AI (DQN)
-
-**Deep Q-Network trained via self-play**
-
-- PyTorch trained over 100,000 self-play episodes
-- Experience replay + epsilon-greedy exploration for stable learning
-- Achieved **>98% win/draw rate** against optimal play
-- Benchmarked against minimax solver — demonstrates stable policy learning with no catastrophic forgetting
-- Model persistence + real-time CLI interaction
-
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/PyTorch-0d1117?style=flat-square&logo=pytorch&logoColor=EE4C2C&labelColor=0d1117" /> <img src="https://img.shields.io/badge/RL-0d1117?style=flat-square&logoColor=f0883e&labelColor=0d1117&color=f0883e" />
-
-</td></tr></table>
-
-<table><tr><td width="50%" valign="top">
-
-### 😎 Face Recognition Attendance
-
-**Anti-spoofing with Liveness Detection**
-
-- Dlib + OpenCV liveness detection for robust anti-spoofing
-- Streamlit GUI for real-time face recognition
-- Automated attendance logging with timestamps
-- Resistant to photo/video attacks with liveness verification
-
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/OpenCV-0d1117?style=flat-square&logo=opencv&logoColor=5C3EE8&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Dlib-0d1117?style=flat-square&logoColor=ea3223&labelColor=0d1117&color=ea3223" />
-
-</td><td width="50%" valign="top">
-
-### 📝 Value Notes
-
-**Browser Extension for Collaborative Note-Taking**
-
-- Chrome extension with real-time synchronization via Firebase
-- Built with React 18, TypeScript, and Tailwind CSS
-- Cross-device sync for seamless note management
-- Lightweight, fast, and privacy-focused design
-
-<img src="https://img.shields.io/badge/React%2018-0d1117?style=flat-square&logo=react&logoColor=61DAFB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwind-css&logoColor=38B2AC&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28&labelColor=0d1117" />
-
-</td></tr>
-
-<tr><td width="50%" valign="top">
-
-### 🏦 Bank Management System
-
-**Functional Banking Application with OOP**
-
-- Built with Python OOP principles for clean architecture
-- Streamlit GUI for interactive banking operations
-- Account management, transactions, and balance tracking
-- Educational implementation of banking system concepts
-
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" /> <img src="https://img.shields.io/badge/OOP-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" /> <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B&labelColor=0d1117" />
-
-</td></tr>
-</table>
-
----
-
-## 🛠️ Tech Stack
-
-<p align="center">
-  <strong>AI & Machine Learning</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB&labelColor=0d1117" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-0d1117?style=flat-square&logo=pytorch&logoColor=EE4C2C&labelColor=0d1117" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Scikit--learn-0d1117?style=flat-square&logoColor=F7931E&labelColor=0d1117&color=F7931E" alt="Scikit-learn" />
-  <img src="https://img.shields.io/badge/OpenCV-0d1117?style=flat-square&logo=opencv&logoColor=5C3EE8&labelColor=0d1117" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/LangChain-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=1C3C3C" alt="LangChain" />
-  <img src="https://img.shields.io/badge/LangGraph-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=2C2C2C" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/ChromaDB-0d1117?style=flat-square&logoColor=FF6B6B&labelColor=0d1117&color=FF6B6B" alt="ChromaDB" />
-  <img src="https://img.shields.io/badge/FAISS-0d1117?style=flat-square&logoColor=0078D4&labelColor=0d1117&color=0078D4" alt="FAISS" />
-  <img src="https://img.shields.io/badge/RAG%20Systems-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="RAG" />
-  <img src="https://img.shields.io/badge/RAGAS-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="RAGAS" />
-  <img src="https://img.shields.io/badge/CI/CD%20Integration-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" alt="CI/CD" />
-  <img src="https://img.shields.io/badge/Multi--Agent%20Systems-0d1117?style=flat-square&logoColor=f0883e&labelColor=0d1117&color=f0883e" alt="Multi-agent" />
-  <img src="https://img.shields.io/badge/RL/DQN-0d1117?style=flat-square&logoColor=f0883e&labelColor=0d1117&color=f0883e" alt="RL" />
-  <img src="https://img.shields.io/badge/Prompt%20Engineering-0d1117?style=flat-square&logoColor=3fb950&labelColor=0d1117&color=3fb950" alt="Prompt Eng" />
-</p>
-
-<p align="center">
-  <strong>Web Development</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=next.js&logoColor=white&labelColor=0d1117" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB&labelColor=0d1117" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6&labelColor=0d1117" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688&labelColor=0d1117" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwind-css&logoColor=38B2AC&labelColor=0d1117" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/JavaScript-0d1117?style=flat-square&logo=javascript&logoColor=F7DF1E&labelColor=0d1117" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1&labelColor=0d1117" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Groq-0d1117?style=flat-square&logoColor=F5A623&labelColor=0d1117&color=F5A623" alt="Groq" />
-  <img src="https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28&labelColor=0d1117" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B&labelColor=0d1117" alt="Streamlit" />
-  <img src="https://img.shields.io/badge/REST%20APIs-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="REST" />
-</p>
-
-<p align="center">
-  <strong>Tools & Practices</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=F05032&labelColor=0d1117" alt="Git" />
-  <img src="https://img.shields.io/badge/Linux-0d1117?style=flat-square&logo=linux&logoColor=FCC624&labelColor=0d1117" alt="Linux" />
-  <img src="https://img.shields.io/badge/OOP-0d1117?style=flat-square&logoColor=5C3EE8&labelColor=0d1117&color=5C3EE8" alt="OOP" />
-  <img src="https://img.shields.io/badge/DSA-0d1117?style=flat-square&logoColor=58a6ff&labelColor=0d1117&color=58a6ff" alt="DSA" />
-  <img src="https://img.shields.io/badge/Claude%20Code-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=0d1117" alt="Claude" />
-  <img src="https://img.shields.io/badge/Copilot%20CLI-0d1117?style=flat-square&logoColor=0078D4&labelColor=0d1117&color=0078D4" alt="Copilot" />
-</p>
-
----
-
-## 📊 GitHub Activity
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=MuhammadMaheem&theme=darkhub&no-frame=true&margin-w=15&margin-h=15&no-bg=true&column=6" alt="trophy" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=MuhammadMaheem&theme=dark&hide_border=true&background=0d1117&ring=58a6ff&fire=f0883e&currStreakNum=3fb950&sideNum=58a6ff&sideLabel=8b949e&date_format=%5BY.%5Dn.j" alt="streak" />
-</p>
-
----
-
-## 🤝 Let's Connect
-
-<p align="center">
-  <em>Open to collaborations, freelance projects, and interesting conversations in AI/ML</em>
-</p>
-
-<p align="center">
-  <a href="mailto:mirza.muhammad.maheem@gmail.com">
-    <img src="https://img.shields.io/badge/📧_Email-f85149?style=for-the-badge&labelColor=0d1117" alt="Email" />
-  </a>
-  <a href="https://www.linkedin.com/in/muhammad-maheem/" target="_blank">
-    <img src="https://img.shields.io/badge/💼_LinkedIn-58a6ff?style=for-the-badge&labelColor=0d1117" alt="LinkedIn" />
-  </a>
-  <a href="https://muhammadmaheem.github.io/MuhammadMaheem.Portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_Portfolio-3fb950?style=for-the-badge&labelColor=0d1117" alt="Portfolio" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=transparent&height=60&section=footer&text=✦&fontSize=20&fontColor=58a6ff&animation=twinkling&reversal=false&fontAlignY=50" alt="footer" />
-</p>
+</div>
