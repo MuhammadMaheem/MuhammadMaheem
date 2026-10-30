@@ -12,7 +12,7 @@
     </linearGradient>
     <clipPath id="type">
       <rect x="62" y="64" height="26" width="0">
-        <animate attributeName="width" from="0" to="335" begin="0.6s" dur="1.6s" fill="freeze" calcMode="discrete"
+        <animate attributeName="width" from="0" to="335" begin="0.3s" dur="1.1s" fill="freeze" calcMode="discrete"
           values="0;9.5;19;28.5;38;47.5;57;66.5;76;85.5;95;104.5;114;123.5;133;142.5;152;161.5;171;180.5;190;199.5;209;218.5;228;237.5;247;256.5;266;275.5;285;294.5;304;313.5;323;335"/>
       </rect>
     </clipPath>
@@ -49,37 +49,37 @@
 
   <!-- agent log -->
   <g class="mono t">
-    <text x="28" y="118" class="l" style="animation-delay:2.4s"><tspan class="p">[planner] </tspan><tspan x="128" class="d">decomposing query into a DAG → 3 parallel waves</tspan></text>
+    <text x="28" y="118" class="l" style="animation-delay:1.6s"><tspan class="p">[planner] </tspan><tspan x="128" class="d">decomposing query into a DAG → 3 parallel waves</tspan></text>
 
-    <text x="28" y="144" class="l" style="animation-delay:3.0s"><tspan class="b">[web]     </tspan><tspan x="128">▸ crawling github.com/MuhammadMaheem</tspan></text>
-    <rect x="480" y="134" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:3.0s"/>
-    <rect x="480" y="134" width="290" height="10" rx="2" fill="#58a6ff" class="bar" style="animation-delay:3.1s"/>
-    <text x="790" y="144" class="ok g" style="animation-delay:4.0s">✓ 90 repos</text>
+    <text x="28" y="144" class="l" style="animation-delay:2.0s"><tspan class="b">[web]     </tspan><tspan x="128">▸ crawling github.com/MuhammadMaheem</tspan></text>
+    <rect x="480" y="134" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:2.0s"/>
+    <rect x="480" y="134" width="290" height="10" rx="2" fill="#58a6ff" class="bar" style="animation-delay:2.1s"/>
+    <text x="790" y="144" class="ok g" style="animation-delay:2.9s">✓ 90 repos</text>
 
-    <text x="28" y="170" class="l" style="animation-delay:3.3s"><tspan class="o">[rag]     </tspan><tspan x="128">▸ retrieving career chunks (hybrid)</tspan></text>
-    <rect x="480" y="160" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:3.3s"/>
-    <rect x="480" y="160" width="290" height="10" rx="2" fill="#f0883e" class="bar" style="animation-delay:3.4s"/>
-    <text x="790" y="170" class="ok g" style="animation-delay:4.3s">✓ 3 interns</text>
+    <text x="28" y="170" class="l" style="animation-delay:2.2s"><tspan class="o">[rag]     </tspan><tspan x="128">▸ retrieving career chunks (hybrid)</tspan></text>
+    <rect x="480" y="160" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:2.2s"/>
+    <rect x="480" y="160" width="290" height="10" rx="2" fill="#f0883e" class="bar" style="animation-delay:2.3s"/>
+    <text x="790" y="170" class="ok g" style="animation-delay:3.1s">✓ 3 interns</text>
 
-    <text x="28" y="196" class="l" style="animation-delay:3.6s"><tspan class="g">[code]    </tspan><tspan x="128">▸ sandbox: python -m profile --verify</tspan></text>
-    <rect x="480" y="186" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:3.6s"/>
-    <rect x="480" y="186" width="290" height="10" rx="2" fill="#3fb950" class="bar" style="animation-delay:3.7s"/>
-    <text x="790" y="196" class="ok g" style="animation-delay:4.6s">✓ exit 0</text>
+    <text x="28" y="196" class="l" style="animation-delay:2.4s"><tspan class="g">[code]    </tspan><tspan x="128">▸ sandbox: python -m profile --verify</tspan></text>
+    <rect x="480" y="186" width="290" height="10" rx="2" fill="#21262d" class="l" style="animation-delay:2.4s"/>
+    <rect x="480" y="186" width="290" height="10" rx="2" fill="#3fb950" class="bar" style="animation-delay:2.5s"/>
+    <text x="790" y="196" class="ok g" style="animation-delay:3.3s">✓ exit 0</text>
 
-    <text x="28" y="222" class="l" style="animation-delay:4.9s"><tspan class="p">[synth]   </tspan><tspan x="128" class="d">merging findings into a cited report…</tspan></text>
-    <text x="28" y="248" class="l" style="animation-delay:5.4s"><tspan class="y">[critic]  </tspan><tspan x="128" class="d">coverage </tspan><tspan class="g">0.97</tspan><tspan class="d"> ≥ 0.75 threshold → </tspan><tspan class="g">ACCEPT ✓</tspan></text>
+    <text x="28" y="222" class="l" style="animation-delay:3.5s"><tspan class="p">[synth]   </tspan><tspan x="128" class="d">merging findings into a cited report…</tspan></text>
+    <text x="28" y="248" class="l" style="animation-delay:3.9s"><tspan class="y">[critic]  </tspan><tspan x="128" class="d">coverage </tspan><tspan class="g">0.97</tspan><tspan class="d"> ≥ 0.75 threshold → </tspan><tspan class="g">ACCEPT ✓</tspan></text>
   </g>
 
-  <line x1="28" y1="270" x2="872" y2="270" stroke="#30363d" stroke-dasharray="4 6" class="l" style="animation-delay:5.9s"/>
+  <line x1="28" y1="270" x2="872" y2="270" stroke="#30363d" stroke-dasharray="4 6" class="l" style="animation-delay:4.2s"/>
 
   <!-- the result -->
-  <g class="l" style="animation-delay:6.2s">
+  <g class="l" style="animation-delay:4.4s">
     <text x="28" y="328" class="mono" font-size="46" font-weight="800" letter-spacing="3" fill="url(#name)">MUHAMMAD MAHEEM</text>
   </g>
   <g class="mono t">
-    <text x="28" y="364" class="l" style="animation-delay:6.8s"><tspan class="d">role</tspan><tspan x="108" font-weight="700">AI Engineer</tspan><tspan class="d"> · </tspan><tspan>RAG · multi-agent orchestration · LLM evals · full-stack SaaS</tspan></text>
-    <text x="28" y="390" class="l" style="animation-delay:7.2s"><tspan class="d">base</tspan><tspan x="108">Lahore, PK</tspan><tspan class="d"> · </tspan><tspan>BS Artificial Intelligence @ Superior University</tspan></text>
-    <text x="28" y="416" class="l" style="animation-delay:7.6s"><tspan class="d">status</tspan><tspan x="108" class="g">● open to onsite AI Engineer roles in Lahore</tspan></text>
-    <text x="28" y="450" class="l" style="animation-delay:8.1s"><tspan class="g">❯ </tspan><tspan class="d">scroll down to read the full report  </tspan><tspan class="cur b">█</tspan></text>
+    <text x="28" y="364" class="l" style="animation-delay:4.8s"><tspan font-weight="700">AI Engineer</tspan><tspan class="d">  ·  </tspan><tspan>I build AI that reads documents, answers questions,</tspan></text>
+    <text x="28" y="388" class="l" style="animation-delay:4.8s"><tspan>and checks its own work before anyone sees it.</tspan></text>
+    <text x="28" y="420" class="l" style="animation-delay:5.2s"><tspan class="b">3 internships</tspan><tspan class="d">  ·  </tspan><tspan class="o">16+ shipped projects</tspan><tspan class="d">  ·  </tspan><tspan class="p">BS AI, Superior University</tspan><tspan class="d">  ·  </tspan><tspan>Lahore</tspan></text>
+    <text x="28" y="450" class="l" style="animation-delay:5.6s"><tspan class="g">● Open to onsite AI Engineer roles</tspan><tspan class="d">   ↓ scroll for the details </tspan><tspan class="cur b">█</tspan></text>
   </g>
 </svg>
