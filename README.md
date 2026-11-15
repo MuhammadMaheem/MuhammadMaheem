@@ -88,6 +88,7 @@ Ask a hard question. A team of AI agents <b>researches it in parallel</b> and fa
 
 | Project | What it does, in plain words | Built with | |
 | :-- | :-- | :-- | :-: |
+| **INKWAKE** (Android game) | A mobile game where you draw circles with an ink trail to wipe out every enemy inside, across five seasons with a boss at the end of each | <sub>TypeScript · WebGL · Capacitor · Android</sub> | <sub>private</sub> |
 | **DocuQuery** | Chatbot for your PDFs that is automatically tested, and blocked from release if its answers get worse | <sub>FastAPI · LangGraph · RAGAS · Groq</sub> | <a href="https://github.com/MuhammadMaheem/Quality-Evaluation-RAG-chatbot"><img src="https://img.shields.io/badge/code-0d1117?style=flat-square&logo=github&logoColor=white" alt="Source code"></a> |
 | **Agentic PDF Chatbot** | Upload PDFs and chat with them; each user gets a private, secure workspace | <sub>FastAPI · Next.js · PostgreSQL</sub> | <a href="https://github.com/MuhammadMaheem/PDF-Chatbot-Rag"><img src="https://img.shields.io/badge/code-0d1117?style=flat-square&logo=github&logoColor=white" alt="Source code"></a> |
 | **Hadith Chatbot** | Search 39,038 hadiths by meaning, not just keywords | <sub>LangChain · FAISS · BM25</sub> | <a href="https://github.com/MuhammadMaheem/Hadith-Chatbot"><img src="https://img.shields.io/badge/code-0d1117?style=flat-square&logo=github&logoColor=white" alt="Source code"></a> |
