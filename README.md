@@ -20,7 +20,7 @@
 
 <table>
 <tr><td width="170"><b>What I do</b></td><td>I build AI tools that companies use to <b>search, summarise and review documents</b>: chatbots that answer from your files, analysers that flag risks in contracts, and systems that rank job candidates.</td></tr>
-<tr><td><b>Where I've worked</b></td><td><b>TEYZIX CORE</b> (AI Engineer Intern) · <b>Punjab Skill Development Authority</b> (built their platform as the only engineer) · <b>AABS</b> (Software Engineer Intern)</td></tr>
+<tr><td><b>Where I've worked</b></td><td><b>Agnific</b> (Game Developer) · <b>TEYZIX CORE</b> (AI Engineer Intern) · <b>Punjab Skill Development Authority</b> (built their platform as the only engineer) · <b>AABS</b> (Software Engineer Intern)</td></tr>
 <tr><td><b>Proof it works</b></td><td>16+ shipped projects, including <a href="https://recruit-ai-mu.vercel.app">RecruitAI, live here</a>, and a full government SaaS platform delivered solo, from design to production.</td></tr>
 <tr><td><b>Education</b></td><td>BS Artificial Intelligence, Superior University, Lahore (2024 — 2028) · 5th semester · CGPA 3.56</td></tr>
 <tr><td><b>Looking for</b></td><td>An <b>onsite AI Engineer</b> role in <b>Lahore</b>. Available now.</td></tr>
@@ -32,6 +32,7 @@
 
 | Role | Company | When | What I delivered |
 | :-- | :-- | :-- | :-- |
+| **Game Developer** | Agnific | Oct 2026 — Present | Developed **Inkwake**, a single-player survivor game for Android using TypeScript and a custom WebGL pipeline, with loop-closing mechanics, enemy director, seasonal bosses, and Capacitor + Play Games integration. |
 | **AI Engineer Intern** | TEYZIX CORE | Jun 2026 — Jul 2026 | Built AI tools that review legal contracts for risk, rank job candidates, and summarise long documents in 16+ languages. |
 | **AI Developer Intern** | Punjab Skill Development Authority (PSDA) | Mar 2026 — May 2026 | As the **only engineer**, took a full web platform from design to production: public site, admin dashboard, user roles, and an AI that reads uploaded documents. |
 | **Software Engineer Intern** | Artificial Automation Business Solutions (AABS) | Sep 2025 — Nov 2025 | Built a chatbot that answers questions from PDF files, plus dashboard screens for login, analytics and subscriptions. |
@@ -40,7 +41,12 @@
 <summary><sub><b>Engineer view:</b> <code>git log --graph --career</code></sub></summary>
 
 ```text
-* Jun 2026 — Jul 2026  (HEAD -> ai-engineer)  AI Engineer Intern @ TEYZIX CORE
+* Oct 2026 — Present   (HEAD -> game-dev)  Game Developer @ Agnific (Remote)
+|   + developed Inkwake, a single-player survivor game for Android (TypeScript + custom WebGL)
+|   + implemented loop-closing mechanic, enemy director, and seasonal boss encounters
+|   + packaged web build for Android with Capacitor and native Play Games integration
+|
+* Jun 2026 — Jul 2026  (tag: ai-engineer)  AI Engineer Intern @ TEYZIX CORE
 |   + legal-tech contract risk analyzer: 7-stage async pipeline (FastAPI + Next.js 15),
 |     clause extraction, risk flags with confidence scores, explainable compliance score
 |     via RAG over ChromaDB
